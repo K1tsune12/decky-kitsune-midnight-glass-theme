@@ -1,0 +1,40 @@
+/* Custom zoom with blurred fill (based on Clean Gameview - Custom Zoom & Blur by Cegrosa) */
+:root {
+  --kmg-zoom-official: 100%;
+  --kmg-zoom-custom: 180%;
+  --kmg-fill-blur: 20px;
+  --kmg-fill-scale: 150%;
+  --kmg-fill-saturate: 140%;
+  --kmg-fill-brightness: 200%;
+}
+
+/* Official hero zoom */
+.sharedappdetailsheader_ImgSrc__dije {
+  object-fit: contain !important;
+  transform: scale(var(--kmg-zoom-official)) !important;
+  transition: transform 0.2s ease !important;
+}
+
+/* Custom hero zoom (SteamGridDB / custom artwork) */
+.sharedappdetailsheader_ImgSrc__dije[src*="/customimages/"],
+.sharedappdetailsheader_HeaderBackgroundImage_1sarA img[src*="/customimages/"] {
+  transform: scale(var(--kmg-zoom-custom)) !important;
+}
+
+/* Blurred copy of the hero filling the empty space */
+.sharedappdetailsheader_HeaderBackgroundImage_1sarA > img:first-child {
+  position: absolute !important;
+  top: -10% !important;
+  bottom: -10% !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  height: 120% !important;
+  object-fit: fill !important;
+  transform-origin: center center !important;
+  filter: blur(var(--kmg-fill-blur))
+          saturate(var(--kmg-fill-saturate))
+          brightness(var(--kmg-fill-brightness)) !important;
+  transform: scale(var(--kmg-fill-scale)) !important;
+  pointer-events: none !important;
+}

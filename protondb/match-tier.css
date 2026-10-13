@@ -1,0 +1,11 @@
+/* ProtonDB Badges: border uses the tier color instead of the Deck status color */
+.protondb-decky-indicator-container div:has(> .protondb-decky-indicator) {
+  --kmg-pdb-border: currentColor;
+  border-color: var(--kmg-pdb-border) !important;
+  box-shadow: 0 0 6px color-mix(in srgb, var(--kmg-pdb-border) 33%, transparent) !important;
+}
+.protondb-decky-indicator-container div:has(> .protondb-decky-indicator-platinum) { --kmg-pdb-border: rgb(180, 199, 220); }
+.protondb-decky-indicator-container div:has(> .protondb-decky-indicator-gold) { --kmg-pdb-border: rgb(207, 181, 59); }
+.protondb-decky-indicator-container div:has(> .protondb-decky-indicator-silver) { --kmg-pdb-border: rgb(166, 166, 166); }
+.protondb-decky-indicator-container div:has(> .protondb-decky-indicator-bronze) { --kmg-pdb-border: rgb(205, 127, 50); }
+.protondb-decky-indicator-container div:has(> .protondb-decky-indicator-borked) { --kmg-pdb-border: rgb(255, 0, 0); }

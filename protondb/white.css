@@ -1,0 +1,5 @@
+/* ProtonDB Badges: white border */
+.protondb-decky-indicator-container div:has(> .protondb-decky-indicator) {
+  border-color: rgba(255, 255, 255, 0.85) !important;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.25) !important;
+}

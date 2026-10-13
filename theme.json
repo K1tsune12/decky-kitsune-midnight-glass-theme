@@ -1,0 +1,947 @@
+{
+  "name": "Kitsune Midnight Glass",
+  "author": "K1tsune12",
+  "version": "v1.0",
+  "manifest_version": 9,
+  "description": "Black glass UI inspired by Obsidian that keeps Steam's blur and transparency, with Clean Gameview, zoom & blur hero options and a darker game page.",
+  "inject": {
+    "shared.css": [
+      "SP",
+      "MainMenu",
+      "QuickAccess",
+      "notificationtoasts.*"
+    ],
+    "gameview/clean.css": [
+      "SP"
+    ],
+    "gameview/bar.css": [
+      "SP"
+    ],
+    "gameview/logo.css": [
+      "SP"
+    ]
+  },
+  "patches": {
+    "Main Color": {
+      "type": "dropdown",
+      "default": "Black",
+      "values": {
+        "Black": {
+          "--kmg-main": [
+            "#000",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "Dark Gray": {
+          "--kmg-main": [
+            "#121212",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "Gray": {
+          "--kmg-main": [
+            "#181818",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "Red": {
+          "--kmg-main": [
+            "#271414",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "Orange": {
+          "--kmg-main": [
+            "#2b1c0b",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "Yellow": {
+          "--kmg-main": [
+            "#222209",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "Green": {
+          "--kmg-main": [
+            "#142714",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "Blue": {
+          "--kmg-main": [
+            "#141427",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "Indigo": {
+          "--kmg-main": [
+            "#1d1427",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "Violet": {
+          "--kmg-main": [
+            "#231427",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "Custom": {}
+      },
+      "components": [
+        {
+          "name": "Custom Color",
+          "type": "color-picker",
+          "on": "Custom",
+          "default": "#000",
+          "css_variable": "--kmg-main",
+          "tabs": [
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        }
+      ]
+    },
+    "Menu Opacity": {
+      "type": "slider",
+      "default": "100%",
+      "values": {
+        "50%": {
+          "--kmg-menu-alpha": [
+            "0.5",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "60%": {
+          "--kmg-menu-alpha": [
+            "0.6",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "70%": {
+          "--kmg-menu-alpha": [
+            "0.7",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "80%": {
+          "--kmg-menu-alpha": [
+            "0.8",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "85%": {
+          "--kmg-menu-alpha": [
+            "0.85",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "90%": {
+          "--kmg-menu-alpha": [
+            "0.9",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "95%": {
+          "--kmg-menu-alpha": [
+            "0.95",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "100%": {
+          "--kmg-menu-alpha": [
+            "1",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        }
+      }
+    },
+    "Gameview Darkness": {
+      "type": "slider",
+      "default": "60%",
+      "values": {
+        "Original": {},
+        "20%": {
+          "gameview/dark.css": [
+            "SP"
+          ],
+          "--kmg-gv-art": [
+            "0.5",
+            "SP"
+          ]
+        },
+        "40%": {
+          "gameview/dark.css": [
+            "SP"
+          ],
+          "--kmg-gv-art": [
+            "0.35",
+            "SP"
+          ]
+        },
+        "60%": {
+          "gameview/dark.css": [
+            "SP"
+          ],
+          "--kmg-gv-art": [
+            "0.2",
+            "SP"
+          ]
+        },
+        "80%": {
+          "gameview/dark.css": [
+            "SP"
+          ],
+          "--kmg-gv-art": [
+            "0.1",
+            "SP"
+          ]
+        },
+        "100%": {
+          "gameview/dark.css": [
+            "SP"
+          ],
+          "--kmg-gv-art": [
+            "0",
+            "SP"
+          ]
+        }
+      }
+    },
+    "Online Badge Opacity": {
+      "type": "slider",
+      "default": "40%",
+      "values": {
+        "0%": {
+          "gameview/badge.css": [
+            "SP"
+          ],
+          "--kmg-badge-alpha": [
+            "0",
+            "SP"
+          ]
+        },
+        "20%": {
+          "gameview/badge.css": [
+            "SP"
+          ],
+          "--kmg-badge-alpha": [
+            "0.2",
+            "SP"
+          ]
+        },
+        "40%": {
+          "gameview/badge.css": [
+            "SP"
+          ],
+          "--kmg-badge-alpha": [
+            "0.4",
+            "SP"
+          ]
+        },
+        "60%": {
+          "gameview/badge.css": [
+            "SP"
+          ],
+          "--kmg-badge-alpha": [
+            "0.6",
+            "SP"
+          ]
+        },
+        "80%": {
+          "gameview/badge.css": [
+            "SP"
+          ],
+          "--kmg-badge-alpha": [
+            "0.8",
+            "SP"
+          ]
+        },
+        "100%": {
+          "gameview/badge.css": [
+            "SP"
+          ],
+          "--kmg-badge-alpha": [
+            "1",
+            "SP"
+          ]
+        }
+      }
+    },
+    "Play Bar Style": {
+      "type": "dropdown",
+      "default": "Transparent",
+      "values": {
+        "Transparent": {},
+        "Blur": {
+          "--kmg-bar-blur": [
+            "blur(8px)",
+            "SP"
+          ]
+        },
+        "Gradient": {
+          "--kmg-bar-play-bg": [
+            "linear-gradient(to bottom, var(--kmg-bar-half), var(--kmg-bar-full))",
+            "SP"
+          ],
+          "--kmg-bar-hltb-bg": [
+            "linear-gradient(to bottom, transparent, var(--kmg-bar-half))",
+            "SP"
+          ]
+        },
+        "Gradient + Blur": {
+          "--kmg-bar-play-bg": [
+            "linear-gradient(to bottom, var(--kmg-bar-half), var(--kmg-bar-full))",
+            "SP"
+          ],
+          "--kmg-bar-hltb-bg": [
+            "linear-gradient(to bottom, transparent, var(--kmg-bar-half))",
+            "SP"
+          ],
+          "--kmg-bar-hltb-mask": [
+            "linear-gradient(to bottom, transparent, #000)",
+            "SP"
+          ],
+          "--kmg-bar-blur": [
+            "blur(8px)",
+            "SP"
+          ]
+        },
+        "Clear": {
+          "--kmg-bar-play-bg": [
+            "transparent",
+            "SP"
+          ],
+          "--kmg-bar-hltb-bg": [
+            "transparent",
+            "SP"
+          ]
+        }
+      }
+    },
+    "Play Bar Opacity": {
+      "type": "slider",
+      "default": "33%",
+      "values": {
+        "10%": {
+          "--kmg-bar-alpha": [
+            "0.1",
+            "SP"
+          ]
+        },
+        "20%": {
+          "--kmg-bar-alpha": [
+            "0.2",
+            "SP"
+          ]
+        },
+        "33%": {
+          "--kmg-bar-alpha": [
+            "0.33",
+            "SP"
+          ]
+        },
+        "50%": {
+          "--kmg-bar-alpha": [
+            "0.5",
+            "SP"
+          ]
+        },
+        "65%": {
+          "--kmg-bar-alpha": [
+            "0.65",
+            "SP"
+          ]
+        },
+        "80%": {
+          "--kmg-bar-alpha": [
+            "0.8",
+            "SP"
+          ]
+        },
+        "100%": {
+          "--kmg-bar-alpha": [
+            "1",
+            "SP"
+          ]
+        }
+      }
+    },
+    "Play Bar Tint": {
+      "type": "dropdown",
+      "default": "Steam",
+      "values": {
+        "Steam": {},
+        "Main Color": {
+          "--kmg-bar-base": [
+            "var(--kmg-main)",
+            "SP"
+          ]
+        }
+      }
+    },
+    "Connect Hero with Body": {
+      "type": "checkbox",
+      "default": "No",
+      "values": {
+        "Yes": {
+          "gameview/playbar-connected.css": [
+            "SP"
+          ]
+        },
+        "No": {}
+      }
+    },
+    "Hero Alignment": {
+      "type": "dropdown",
+      "default": "Zoom-Center",
+      "values": {
+        "Zoom-Center": {},
+        "Zoom-Left": {
+          "gameview/alignments/left.css": [
+            "SP"
+          ]
+        },
+        "Zoom-Right": {
+          "gameview/alignments/right.css": [
+            "SP"
+          ]
+        },
+        "Contain": {
+          "gameview/alignments/contain.css": [
+            "SP"
+          ]
+        },
+        "Stretch": {
+          "gameview/alignments/stretch.css": [
+            "SP"
+          ]
+        },
+        "Custom Zoom & Blur": {
+          "gameview/alignments/zoom-blur.css": [
+            "SP"
+          ]
+        }
+      }
+    },
+    "Official Hero Zoom": {
+      "type": "slider",
+      "default": "100%",
+      "values": {
+        "100%": {
+          "--kmg-zoom-official": [
+            "100%",
+            "SP"
+          ]
+        },
+        "110%": {
+          "--kmg-zoom-official": [
+            "110%",
+            "SP"
+          ]
+        },
+        "120%": {
+          "--kmg-zoom-official": [
+            "120%",
+            "SP"
+          ]
+        },
+        "130%": {
+          "--kmg-zoom-official": [
+            "130%",
+            "SP"
+          ]
+        },
+        "140%": {
+          "--kmg-zoom-official": [
+            "140%",
+            "SP"
+          ]
+        },
+        "150%": {
+          "--kmg-zoom-official": [
+            "150%",
+            "SP"
+          ]
+        }
+      }
+    },
+    "Custom Hero Zoom": {
+      "type": "slider",
+      "default": "180%",
+      "values": {
+        "100%": {
+          "--kmg-zoom-custom": [
+            "100%",
+            "SP"
+          ]
+        },
+        "120%": {
+          "--kmg-zoom-custom": [
+            "120%",
+            "SP"
+          ]
+        },
+        "140%": {
+          "--kmg-zoom-custom": [
+            "140%",
+            "SP"
+          ]
+        },
+        "150%": {
+          "--kmg-zoom-custom": [
+            "150%",
+            "SP"
+          ]
+        },
+        "160%": {
+          "--kmg-zoom-custom": [
+            "160%",
+            "SP"
+          ]
+        },
+        "170%": {
+          "--kmg-zoom-custom": [
+            "170%",
+            "SP"
+          ]
+        },
+        "180%": {
+          "--kmg-zoom-custom": [
+            "180%",
+            "SP"
+          ]
+        },
+        "200%": {
+          "--kmg-zoom-custom": [
+            "200%",
+            "SP"
+          ]
+        }
+      }
+    },
+    "Zoom Fill Blur": {
+      "type": "slider",
+      "default": "20px",
+      "values": {
+        "0px": {
+          "--kmg-fill-blur": [
+            "0px",
+            "SP"
+          ]
+        },
+        "10px": {
+          "--kmg-fill-blur": [
+            "10px",
+            "SP"
+          ]
+        },
+        "20px": {
+          "--kmg-fill-blur": [
+            "20px",
+            "SP"
+          ]
+        },
+        "30px": {
+          "--kmg-fill-blur": [
+            "30px",
+            "SP"
+          ]
+        },
+        "40px": {
+          "--kmg-fill-blur": [
+            "40px",
+            "SP"
+          ]
+        },
+        "50px": {
+          "--kmg-fill-blur": [
+            "50px",
+            "SP"
+          ]
+        }
+      }
+    },
+    "Hero Blur": {
+      "type": "slider",
+      "default": "Off",
+      "values": {
+        "Off": {},
+        "2px": {
+          "gameview/hero-filter.css": [
+            "SP"
+          ],
+          "--kmg-hero-blur": [
+            "2px",
+            "SP"
+          ]
+        },
+        "4px": {
+          "gameview/hero-filter.css": [
+            "SP"
+          ],
+          "--kmg-hero-blur": [
+            "4px",
+            "SP"
+          ]
+        },
+        "8px": {
+          "gameview/hero-filter.css": [
+            "SP"
+          ],
+          "--kmg-hero-blur": [
+            "8px",
+            "SP"
+          ]
+        },
+        "16px": {
+          "gameview/hero-filter.css": [
+            "SP"
+          ],
+          "--kmg-hero-blur": [
+            "16px",
+            "SP"
+          ]
+        },
+        "32px": {
+          "gameview/hero-filter.css": [
+            "SP"
+          ],
+          "--kmg-hero-blur": [
+            "32px",
+            "SP"
+          ]
+        }
+      }
+    },
+    "Hero Brightness": {
+      "type": "slider",
+      "default": "1",
+      "values": {
+        "1": {
+          "--kmg-hero-brightness": [
+            "1",
+            "SP"
+          ]
+        },
+        "0.2": {
+          "--kmg-hero-brightness": [
+            "0.2",
+            "SP"
+          ]
+        },
+        "0.4": {
+          "--kmg-hero-brightness": [
+            "0.4",
+            "SP"
+          ]
+        },
+        "0.6": {
+          "--kmg-hero-brightness": [
+            "0.6",
+            "SP"
+          ]
+        },
+        "0.8": {
+          "--kmg-hero-brightness": [
+            "0.8",
+            "SP"
+          ]
+        },
+        "1.2": {
+          "--kmg-hero-brightness": [
+            "1.2",
+            "SP"
+          ]
+        },
+        "1.4": {
+          "--kmg-hero-brightness": [
+            "1.4",
+            "SP"
+          ]
+        }
+      }
+    },
+    "Show Steam Cloud": {
+      "type": "checkbox",
+      "default": "Yes",
+      "values": {
+        "Yes": {
+          "gameview/steamcloud.css": [
+            "SP"
+          ]
+        },
+        "No": {}
+      }
+    },
+    "Ignore Footer": {
+      "type": "checkbox",
+      "default": "No",
+      "values": {
+        "Yes": {
+          "--kmg-footer-height": [
+            "0px",
+            "SP"
+          ],
+          "--kmg-play-anim-height": [
+            "100vh",
+            "SP"
+          ]
+        },
+        "No": {
+          "--kmg-footer-height": [
+            "40px",
+            "SP"
+          ],
+          "--kmg-play-anim-height": [
+            "58vw",
+            "SP"
+          ]
+        }
+      }
+    },
+    "Lock Logo": {
+      "type": "checkbox",
+      "default": "Yes",
+      "values": {
+        "Yes": {
+          "gameview/lockedlogo.css": [
+            "SP"
+          ]
+        },
+        "No": {}
+      }
+    },
+    "Logo Above HLTB": {
+      "type": "checkbox",
+      "default": "Yes",
+      "values": {
+        "Yes": {
+          "--kmg-logo-hltb-gap": [
+            "40px",
+            "SP"
+          ]
+        },
+        "No": {
+          "--kmg-logo-hltb-gap": [
+            "0px",
+            "SP"
+          ]
+        }
+      }
+    },
+    "Logo Lift": {
+      "type": "slider",
+      "default": "0px",
+      "values": {
+        "0px": {
+          "--kmg-logo-lift": [
+            "0px",
+            "SP"
+          ]
+        },
+        "20px": {
+          "--kmg-logo-lift": [
+            "20px",
+            "SP"
+          ]
+        },
+        "40px": {
+          "--kmg-logo-lift": [
+            "40px",
+            "SP"
+          ]
+        },
+        "60px": {
+          "--kmg-logo-lift": [
+            "60px",
+            "SP"
+          ]
+        },
+        "80px": {
+          "--kmg-logo-lift": [
+            "80px",
+            "SP"
+          ]
+        },
+        "100px": {
+          "--kmg-logo-lift": [
+            "100px",
+            "SP"
+          ]
+        },
+        "120px": {
+          "--kmg-logo-lift": [
+            "120px",
+            "SP"
+          ]
+        },
+        "160px": {
+          "--kmg-logo-lift": [
+            "160px",
+            "SP"
+          ]
+        },
+        "200px": {
+          "--kmg-logo-lift": [
+            "200px",
+            "SP"
+          ]
+        }
+      }
+    },
+    "Logo Size": {
+      "type": "slider",
+      "default": "100%",
+      "values": {
+        "50%": {
+          "--kmg-logo-scale": [
+            "0.5",
+            "SP"
+          ]
+        },
+        "60%": {
+          "--kmg-logo-scale": [
+            "0.6",
+            "SP"
+          ]
+        },
+        "70%": {
+          "--kmg-logo-scale": [
+            "0.7",
+            "SP"
+          ]
+        },
+        "80%": {
+          "--kmg-logo-scale": [
+            "0.8",
+            "SP"
+          ]
+        },
+        "90%": {
+          "--kmg-logo-scale": [
+            "0.9",
+            "SP"
+          ]
+        },
+        "100%": {
+          "--kmg-logo-scale": [
+            "1",
+            "SP"
+          ]
+        },
+        "110%": {
+          "--kmg-logo-scale": [
+            "1.1",
+            "SP"
+          ]
+        },
+        "125%": {
+          "--kmg-logo-scale": [
+            "1.25",
+            "SP"
+          ]
+        },
+        "150%": {
+          "--kmg-logo-scale": [
+            "1.5",
+            "SP"
+          ]
+        }
+      }
+    },
+    "ProtonDB Badge Border": {
+      "type": "dropdown",
+      "default": "Match Tier",
+      "values": {
+        "Default": {},
+        "Match Tier": {
+          "protondb/match-tier.css": [
+            "SP"
+          ]
+        },
+        "White": {
+          "protondb/white.css": [
+            "SP"
+          ]
+        },
+        "None": {
+          "protondb/none.css": [
+            "SP"
+          ]
+        }
+      }
+    },
+    "Disable Glow": {
+      "type": "checkbox",
+      "default": "No",
+      "values": {
+        "Yes": {
+          "other/no-glow.css": [
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "No": {}
+      }
+    }
+  }
+}

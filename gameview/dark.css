@@ -1,0 +1,35 @@
+/*
+  Darkens the area below the play bar (friends, activity, news...).
+  The game artwork still shows through; --kmg-gv-art controls how much.
+*/
+:root {
+  --kmg-gv-art: 0.2;
+}
+
+/* Page base: black instead of Steam's blue-gray */
+.smartscrollcontainer_Body_g6Mwh.appdetails_Glassy_3Fmxx {
+  background: var(--kmg-main, #000) !important;
+}
+
+/* Blurred artwork behind the content */
+.sharedappdetailsheader_ImgSrc__dije.sharedappdetailsheader_ImgBlurBackdrop_ooM_c {
+  opacity: var(--kmg-gv-art) !important;
+}
+
+/* No extra blue tint over the content */
+.basicappdetailssectionstyler_AppDetailsRoot_3fp5y {
+  background: transparent !important;
+}
+
+/* Neutral (non-blue) cards */
+.appdetailssection_AppDetailsSectionContainer_31ptF {
+  background: rgba(255, 255, 255, 0.07) !important;
+}
+.appactivityday_PartnerEventMediumImage_By7D9,
+.appactivityday_PartnerEventMediumImage_Container_1HZy7 {
+  background: rgba(255, 255, 255, 0.06) !important;
+}
+.appactivityday_EventHeadline_QCKBq,
+.appactivityday_EventBody_NEMXh {
+  background: rgba(255, 255, 255, 0.07) !important;
+}

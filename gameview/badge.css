@@ -1,0 +1,9 @@
+/* "Players online" badge (PlayCount plugin) */
+:root {
+  --kmg-badge-alpha: 1;
+}
+.playerBadge > button {
+  background-color: color-mix(in srgb, var(--kmg-main, #000) calc(var(--kmg-badge-alpha) * 100%), transparent) !important;
+  backdrop-filter: blur(8px);
+  box-shadow: none !important;
+}

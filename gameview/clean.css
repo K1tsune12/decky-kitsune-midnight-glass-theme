@@ -1,0 +1,53 @@
+/* Clean Gameview layout (based on Clean Gameview by SuchMeme) */
+:root {
+  --kmg-footer-height: 40px;
+  --kmg-play-anim-height: 58vw;
+  --kmg-play-bar-height: 80px;
+  --kmg-top-panel-height: calc(100vh - var(--kmg-play-bar-height) - var(--kmg-footer-height));
+  --kmg-image-height: calc(100vh - var(--kmg-footer-height));
+}
+
+.BasicUI .sharedappdetailsheader_TopCapsule_2meE3 {
+  height: var(--kmg-top-panel-height);
+}
+
+.sharedappdetailsheader_HeaderBackgroundImage_1sarA {
+  height: var(--kmg-image-height);
+}
+
+.BasicUI .sharedappdetailsheader_TopCapsule_2meE3.sharedappdetailsheader_FullscreenEnterStart_P7eLv {
+  animation-name: kmg-makethinggodown;
+  animation-duration: 1s;
+}
+
+.BasicUI .sharedappdetailsheader_TopCapsule_2meE3.sharedappdetailsheader_FullscreenEnterDone_1PRtu {
+  height: var(--kmg-play-anim-height);
+}
+
+.sharedappdetailsheader_TitleSection_1P_tv {
+  padding: 0;
+}
+
+.sharedappdetailsheader_SVGTitle_2w_Zq {
+  background: rgba(14, 20, 27, 0.5);
+  padding-top: 10px;
+  padding-left: 24px;
+  padding-bottom: 16px;
+  margin-bottom: -6px;
+  width: 100%;
+}
+
+@keyframes kmg-makethinggodown {
+  from { height: var(--kmg-top-panel-height); }
+  to { height: var(--kmg-play-anim-height); }
+}
+
+/*
+  Fix: the mirrored blur copy of the hero is twice the hero height. With the
+  taller hero it stretched the page, so dragging the background scrolled past
+  the sticky tabs and left the content cut off. Keep it at most one hero tall.
+*/
+.sharedappdetailsheader_ImgSrc__dije.sharedappdetailsheader_ImgBlurBackdrop_ooM_c {
+  height: calc(var(--kmg-image-height) - 8px) !important;
+  object-fit: cover !important;
+}

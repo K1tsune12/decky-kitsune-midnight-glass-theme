@@ -1,0 +1,10 @@
+/* Hero blur / brightness (based on Blur Gameview Background by gaker19) */
+:root {
+  --kmg-hero-blur: 0px;
+  --kmg-hero-brightness: 1;
+}
+.sharedappdetailsheader_HeaderBackgroundImage_1sarA {
+  filter: blur(var(--kmg-hero-blur)) brightness(var(--kmg-hero-brightness)) !important;
+  transform: scale(1.05);
+  transform-origin: center;
+}

@@ -1,0 +1,21 @@
+/*
+  Game logo position and size.
+  --kmg-logo-lift moves the logo up; when the HLTB bar is on the page the
+  logo is also pushed above it (--kmg-logo-hltb-gap, 0px to disable).
+*/
+:root {
+  --kmg-logo-lift: 0px;
+  --kmg-logo-scale: 1;
+  --kmg-logo-hltb-gap: 40px;
+  --kmg-logo-hltb-extra: 0px;
+}
+
+:root:has(#hltb-for-deck .hltb-info-clean-default) {
+  --kmg-logo-hltb-extra: var(--kmg-logo-hltb-gap);
+}
+
+.sharedappdetailsheader_BoxSizer_30GVp {
+  transform: translateY(calc(-1 * (var(--kmg-logo-lift) + var(--kmg-logo-hltb-extra)))) scale(var(--kmg-logo-scale));
+  transform-origin: bottom left;
+  transition: transform 0.2s ease;
+}

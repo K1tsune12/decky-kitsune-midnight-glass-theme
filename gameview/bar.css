@@ -1,0 +1,46 @@
+/*
+  Play bar + HowLongToBeat bar (HLTB for Deck, "clean" layout).
+  Both are styled together so they read as a single panel.
+  Style, tint and opacity are driven by the variables below.
+*/
+:root {
+  --kmg-bar-base: rgb(14, 20, 27);
+  --kmg-bar-alpha: 0.33;
+  --kmg-bar-full: color-mix(in srgb, var(--kmg-bar-base) calc(var(--kmg-bar-alpha) * 100%), transparent);
+  --kmg-bar-half: color-mix(in srgb, var(--kmg-bar-base) calc(var(--kmg-bar-alpha) * 50%), transparent);
+  --kmg-bar-play-bg: var(--kmg-bar-full);
+  --kmg-bar-hltb-bg: var(--kmg-bar-full);
+  --kmg-bar-blur: none;
+  --kmg-bar-hltb-mask: none;
+}
+
+.basicappdetailssectionstyler_PlaySection_3scbH,
+.sharedappdetailsheader_TitleSection_1P_tv {
+  background: var(--kmg-bar-play-bg) !important;
+  backdrop-filter: var(--kmg-bar-blur) !important;
+}
+
+#hltb-for-deck .hltb-info.hltb-info-clean-default {
+  background: var(--kmg-bar-hltb-bg) !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+/*
+  backdrop-filter on the HLTB bar itself never renders (the hero lives in its
+  own layer), so the blur is drawn as a strip at the bottom of the hero instead,
+  right behind the HLTB bar. Only when the HLTB bar is on the page.
+*/
+:root:has(#hltb-for-deck .hltb-info-clean-default) .sharedappdetailsheader_TopCapsule_2meE3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 40px;
+  backdrop-filter: var(--kmg-bar-blur);
+  -webkit-mask-image: var(--kmg-bar-hltb-mask);
+  mask-image: var(--kmg-bar-hltb-mask);
+  pointer-events: none;
+  z-index: 5;
+}

@@ -1,0 +1,9 @@
+/* Library glow */
+.appgrid_LibraryImageBackgroundGlow_6zcMs {
+  display: none;
+}
+/* Hovered game glow on home */
+.gpfocuswithin ~ .basicgamecarousel_CarouselCapsuleBackgroundGlow_1H3Kf,
+:hover ~ .basicgamecarousel_CarouselCapsuleBackgroundGlow_1H3Kf {
+  opacity: 0;
+}

@@ -1,0 +1,245 @@
+/*
+  Kitsune Midnight Glass
+  Black UI based on Obsidian (EMERALD0874), keeping Steam's blur and transparency.
+*/
+
+:root {
+  --kmg-main: #000;
+  --kmg-menu-alpha: 1;
+  --kmg-menu: color-mix(in srgb, var(--kmg-main) calc(var(--kmg-menu-alpha) * 100%), transparent);
+  --kmg-selected: #22262b;
+  --kmg-button-glow: #ffffff90;
+}
+
+/*
+HOME PAGE
+*/
+.gamepadui_BasicHome_3LYP1.gamepadui_OpaqueBackground_b084m {
+  background: var(--kmg-main);
+}
+.gamepadhome_TabbedContent_cE1Sa {
+  background: var(--kmg-main);
+}
+.gamepadhomerecentgames_RecentGamesBackgroundFadeGradient_1ksIq {
+  background: -webkit-gradient(
+      linear,
+      left 80%,
+      left 90%,
+      from(rgba(0, 0, 0, 0)),
+      to(var(--kmg-main))
+    ),
+    -webkit-gradient(linear, 0% 0%, 100% 0%, color-stop(1%, var(--kmg-main)), color-stop(5%, rgba(0, 0, 0, 0)), color-stop(95%, rgba(0, 0, 0, 0)), color-stop(99%, var(--kmg-main)));
+}
+
+/*
+LIBRARY
+*/
+.gamepadlibrary_GamepadLibrary_ZBBhe {
+  background: var(--kmg-main);
+}
+.steamdeckcompatfilter_CompatFilterDialog_21qvB {
+  background: var(--kmg-main);
+}
+.allcollections_Collection_3IWn- {
+  background: var(--kmg-main);
+}
+
+/*
+GAME DETAILS (dialogs only; the page itself is handled by gameview/*.css)
+*/
+.DeckVerifiedModalDialogClient .DialogContent,
+.DeckVerifiedModalDialog .DialogContent {
+  background: var(--kmg-main);
+}
+
+/*
+STEAM INPUT
+*/
+.controllerconfiguratorchoosebinding_TriggerButton_2MjBd.gpfocus,
+.controllerconfiguratorchoosebinding_BumperButton_2swvc.gpfocus,
+.controllerconfiguratorchoosebinding_SelectButton_3i-XV.gpfocus,
+.controllerconfiguratorchoosebinding_StartButton_3s28A.gpfocus,
+.controllerconfiguratorchoosebinding_MouseKey_19SMS.gpfocus,
+.controllerconfiguratorchoosebinding_KeyboardKey_NoRFS.gpfocus,
+.controllerconfiguratorchoosebinding_ControllerActionKey_3yP_p.gpfocus {
+  filter: drop-shadow(0px 0px 10px var(--kmg-button-glow));
+}
+.controllerconfigurator_TopSection_20sN9,
+.controllerconfigurator_ControllerConfiguratorMain_APY6j,
+.controllerconfigurator_BottomSection_3RsRf,
+.gamepadpagedsettings_PagedSettingDialog_ContentColumn_3JPle,
+.gamepadpagedsettings_PagedSettingsDialog_PageListColumn_2EZ3o,
+.gamepadpage_GamepadPage_2FqpD.gamepadpage_DialogBackground_2msTK,
+.controllerconfigurator_interstitial_ConfiguratorInterstitialContainer_3FS5u,
+.controllerconfiguratorsummary_ControllerConfiguratorSummary_3TvBV {
+  background: var(--kmg-main);
+}
+.controllerconfiguratorchoosebinding_CardinalButtonGroup_3-2qP.controllerconfiguratorchoosebinding_Circle_XDwww::before,
+.controllerconfiguratorchoosebinding_CardinalButtonGroup_3-2qP.controllerconfiguratorchoosebinding_Diamond_32vdo::before {
+  z-index: 10;
+}
+
+/*
+FRIENDS & CHAT
+*/
+.SteamDeckChats.gpfocuswithin .chattabs_ChatTab_1WfqA {
+  box-shadow: none;
+}
+.GamepadMode.friendlist.gpfocuswithin .FriendsListSteamDeckTopSection {
+  background: var(--kmg-menu);
+}
+.GamepadMode.friendlist,
+.GamepadMode.friendlist.gpfocuswithin {
+  background-color: var(--kmg-menu);
+  background: var(--kmg-menu);
+}
+.multiChatDialog.GamepadMode,
+.GamepadMode .multiChatDialog,
+.multiChatDialog.GamepadMode.gpfocuswithin,
+.GamepadMode .multiChatDialog.gpfocuswithin {
+  background-color: var(--kmg-main);
+  background: var(--kmg-main);
+}
+.friendinvites_InvitesList_3i8Fo {
+  background-color: var(--kmg-main);
+}
+
+/*
+DOWNLOADS
+*/
+.downloadgraph_HeroAndLogo_3mZ2r
+  .downloadgraph_HeroContainer_3WauY
+  .downloadgraph_HeroGradient_edQzw {
+  background: none;
+}
+.downloads_DownloadsPage_1bq4x,
+.downloadgraph_HeroAndLogo_3mZ2r.downloadgraph_Empty_pHDI1,
+.downloadgraph_GraphAndStats_3KDkL,
+.BasicUI .libraryassetimage_GreyBackground_2E7G8,
+.downloads_SectionItem_1VNuY.downloads_Active_IbePL {
+  background: var(--kmg-main);
+}
+
+/*
+SETTINGS
+*/
+.BasicUI .librarysettings_LibrarySettings_2nsOY,
+.BasicUI .contentmanagement_ContentManagement_3wk64 {
+  background: var(--kmg-main);
+}
+.settings-container {
+  background-color: var(--kmg-main) !important;
+}
+
+/*
+QUICK ACCESS (right menu)
+*/
+.quickaccessmenu_QuickAccessMenu_V0cr- {
+  background: var(--kmg-menu);
+}
+.quickaccessmenu_Tab_1S76C {
+  background-color: transparent;
+}
+.quickaccessmenu_Tab_1S76C.quickaccessmenu_Selected_2QHMu {
+  background-color: var(--kmg-selected);
+}
+.quickaccessmenu_Title_34nl5 {
+  background: transparent;
+  box-shadow: none;
+}
+.GamepadMode.friendlist .FriendsListSteamDeckTabs {
+  background-color: transparent;
+}
+.header_Header_1E_SL.header_InQuickAccess_2mRo5 {
+  background-color: transparent;
+}
+.quickaccessmenu_Menu_1gJzx::before {
+  background: var(--kmg-menu) !important;
+}
+
+/*
+STEAM MENU (left menu)
+*/
+.mainmenu_Menu_23IDi {
+  background: var(--kmg-menu);
+}
+
+/*
+CONTEXT MENU / POPUPS
+Don't set !important here, it breaks the button highlight color.
+*/
+.gamepadcontextmenu_contextMenuItem_1sdvo,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Stream,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Connect,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Launch,
+.gamepadcontextmenu_contextMenuItem_1sdvo.PlayMusic,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Play,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Resume,
+.gamepadcontextmenu_contextMenuItem_1sdvo.BorrowApp,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Download,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Update,
+.gamepadcontextmenu_contextMenuItem_1sdvo.PreLoad,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Install,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Pause,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Stop,
+.gamepadcontextmenu_contextMenuItem_1sdvo.Cancel {
+  background: var(--kmg-menu);
+}
+.gamepadui_GamepadDialogOverlay_34Euf .ModalOverlayBackground {
+  background: color-mix(in srgb, var(--kmg-main) 87%, transparent);
+}
+.gamepadsearch_GamepadSearch_P_AlE {
+  background: var(--kmg-menu);
+}
+.audio_VolumePopin_2iUUM {
+  background: var(--kmg-menu);
+}
+.gamepadslider_SliderTrack_Mq25N {
+  background: #23262e;
+}
+.gamepaddialog_Field_S-_La.gamepaddialog_WithBottomSeparatorStandard_3s1Rk::after {
+  background: unset;
+}
+.gamepaddialog_ModalPosition_30VHl > .gamepaddialog_GamepadDialogContent_3joNk {
+  background: var(--kmg-main);
+}
+
+/*
+NOTIFICATIONS
+*/
+.notificationcontent_ShortTemplate_2w-Eq,
+.notificationcontent_PinnedTemplate_H_NPi,
+.notificationcontent_StandardTemplate_1B_uv,
+.notificationcontent_ShortTemplate_nwer8,
+.notificationcontent_StandardTemplate_5HZT7,
+.notificationcontent_PinnedTemplateDesktop_1-8YO,
+.notificationcontent_PinnedTemplate_1X-O1,
+.shorttemplates_ShortTemplate_29NLb {
+  background: var(--kmg-menu);
+}
+
+/*
+OTHER
+*/
+.gamepadtabbedpage_TabContents_WDa0_ {
+  background: var(--kmg-main);
+}
+.loadingthrobber_Container_3sa1N,
+.loadingthrobber_Container_3sa1N.loadingthrobber_PreloadThrobber_1-epa,
+.spinnyboi {
+  background: var(--kmg-main) !important;
+}
+.lockscreen_Container_3rFFU {
+  background: var(--kmg-main);
+}
+.console_Console_1fuML {
+  background-color: var(--kmg-main);
+}
+.console_Suggestion_3C1UC {
+  color: #ffffff;
+}
+
+/* Keep the game page see-through: its tabs must not get a solid background */
+.basicappdetailssectionstyler_AppDetailsContainer_2-ns_ .gamepadtabbedpage_TabContents_WDa0_ {
+  background: transparent;
+}

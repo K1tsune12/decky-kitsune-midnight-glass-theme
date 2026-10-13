@@ -1,0 +1,5 @@
+/* ProtonDB Badges: no border */
+.protondb-decky-indicator-container div:has(> .protondb-decky-indicator) {
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
