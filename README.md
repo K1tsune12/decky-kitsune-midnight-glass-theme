@@ -42,8 +42,9 @@ separate gameview themes.
    **Kitsune Midnight Glass**.
 
 For a real blur of the game behind the Steam menus, pair it with the
-**Midnight Glass Overlay** Decky plugin, which also lets you change these
-options and save presets from the Quick Access Menu.
+[**Midnight Glass Overlay**](https://github.com/K1tsune12/decky-midnight-glass-overlay)
+Decky plugin, which also lets you change these options and save presets from
+the Quick Access Menu.
 
 Disable **Clean Gameview**, **Clean Gameview - Custom Zoom & Blur**,
 **Blur Gameview Background** and **Obsidian** while using this theme, since it
