@@ -1,0 +1,27 @@
+/*
+  Steam menu while a game is running (game column + details column).
+  Uses the same color and opacity as the other menus.
+*/
+.mainmenuapprunning_ScrollMask_322FV {
+  background: transparent !important;
+}
+.mainmenuapprunning_NavigationColumn_27FEg,
+.mainmenuapprunning_AppColumn_3FAI9 {
+  background: var(--kmg-menu) !important;
+}
+/* Neutral glow instead of the blue one behind the game logo */
+.mainmenuapprunning_NavigationColumn_27FEg::before {
+  background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 66%) !important;
+}
+
+/* Pages opened inside the game menu (achievements, guides, ...) stay see-through */
+.mainmenuapprunning_AppColumn_3FAI9 .gamepadtabbedpage_TabContents_WDa0_,
+.mainmenuapprunning_AppColumn_3FAI9 .achievementslist_AchievementList_1UXC2 {
+  background: transparent !important;
+}
+
+
+/* Achievement cards: translucent black instead of solid gray */
+.mainmenuapprunning_AppColumn_3FAI9 .achievementslist_AchievementListItemBase_2Kmn7:not(.gpfocus) {
+  background: rgba(0, 0, 0, 0.35) !important;
+}

@@ -1,0 +1,3 @@
+(()=>{const out=[];const parse=v=>{const m=v.match(/rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*([\d.]+))?\)/);return m&&{r:+m[1],g:+m[2],b:+m[3]}};
+const walk=(rules)=>{for(const r of rules){if(r.cssRules&&!r.style){walk(r.cssRules);continue}if(!r.style||!r.selectorText)continue;if(!/gpfocus|:focus|:hover|:active|Active|Selected|selected/.test(r.selectorText))continue;for(const p of ["color","fill"]){const v=r.style.getPropertyValue(p);if(!v)continue;const c=parse(v);if(c&&Math.max(c.r,c.g,c.b)<=110)out.push({sel:r.selectorText,prop:p,val:v.trim()})}}};
+for(const s of document.styleSheets){if(s.ownerNode&&s.ownerNode.id)continue;try{walk(s.cssRules)}catch{}}return JSON.stringify(out)})()

@@ -1,0 +1,25 @@
+/*
+  Selection: the focused item in the Steam menu, the in-game menu, Quick Access
+  (tabs, notifications, friends) and achievements becomes a translucent darker
+  shade instead of gray.
+*/
+:root {
+  --kmg-select-alpha: 0.45;
+  --kmg-qam-select: rgba(0, 0, 0, var(--kmg-select-alpha));
+}
+
+/* Steam menu */
+.mainmenu_Item_2w9Tp.gpfocus,
+.mainmenuapprunning_NavigationMenuItem_1G0K4.gpfocus,
+.mainmenuapprunning_AppColumn_3FAI9 .achievementslist_AchievementListItemBase_2Kmn7.gpfocus {
+  background: var(--kmg-qam-select) !important;
+}
+
+/* Quick Access */
+.quickaccessmenu_Tab_1S76C.quickaccessmenu_Selected_2QHMu {
+  background-color: var(--kmg-qam-select) !important;
+}
+.standardtemplates_StandardTemplateContainer_1adpx.gpfocus,
+.GamepadMode.friendlist .gpfocus:not(button) {
+  background: var(--kmg-qam-select) !important;
+}

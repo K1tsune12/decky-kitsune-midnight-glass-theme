@@ -7,6 +7,10 @@
   --kmg-main: #000;
   --kmg-menu-alpha: 1;
   --kmg-menu: color-mix(in srgb, var(--kmg-main) calc(var(--kmg-menu-alpha) * 100%), transparent);
+  --kmg-chat-alpha: 0.8;
+  --kmg-chat: color-mix(in srgb, var(--kmg-main) calc(var(--kmg-chat-alpha) * 100%), transparent);
+  --kmg-dialog-alpha: 0.7;
+  --kmg-dialog: color-mix(in srgb, var(--kmg-main) calc(var(--kmg-dialog-alpha) * 100%), transparent);
   --kmg-selected: #22262b;
   --kmg-button-glow: #ffffff90;
 }
@@ -97,8 +101,8 @@ FRIENDS & CHAT
 .GamepadMode .multiChatDialog,
 .multiChatDialog.GamepadMode.gpfocuswithin,
 .GamepadMode .multiChatDialog.gpfocuswithin {
-  background-color: var(--kmg-main);
-  background: var(--kmg-main);
+  background-color: var(--kmg-chat);
+  background: var(--kmg-chat);
 }
 .friendinvites_InvitesList_3i8Fo {
   background-color: var(--kmg-main);
@@ -118,6 +122,12 @@ DOWNLOADS
 .BasicUI .libraryassetimage_GreyBackground_2E7G8,
 .downloads_SectionItem_1VNuY.downloads_Active_IbePL {
   background: var(--kmg-main);
+}
+/* Steam's own page gradient and the (empty) graph block win without !important */
+.downloads_DownloadsPage_1bq4x,
+.downloads_Section_3Mbhn.downloads_Active_IbePL,
+.downloads_Section_3Mbhn.downloads_Empty_2KB3y {
+  background: var(--kmg-main) !important;
 }
 
 /*
@@ -200,8 +210,15 @@ Don't set !important here, it breaks the button highlight color.
 .gamepaddialog_Field_S-_La.gamepaddialog_WithBottomSeparatorStandard_3s1Rk::after {
   background: unset;
 }
+/*
+  Dialogs (confirmations, warnings): translucent, with a border in the main
+  color. No backdrop-filter on the box itself: on the Deck it hides the
+  transparency (the dim overlay behind the dialog already blurs the page).
+*/
 .gamepaddialog_ModalPosition_30VHl > .gamepaddialog_GamepadDialogContent_3joNk {
-  background: var(--kmg-main);
+  background: var(--kmg-dialog);
+  border-color: var(--kmg-main) !important;
+  backdrop-filter: none !important;
 }
 
 /*

@@ -1,7 +1,7 @@
 {
   "name": "Kitsune Midnight Glass",
   "author": "K1tsune12",
-  "version": "v1.0",
+  "version": "v1.1",
   "manifest_version": 9,
   "description": "Black glass UI inspired by Obsidian that keeps Steam's blur and transparency, with Clean Gameview, zoom & blur hero options and a darker game page.",
   "inject": {
@@ -19,6 +19,13 @@
     ],
     "gameview/logo.css": [
       "SP"
+    ],
+    "notifications/toast.css": [
+      "notificationtoasts.*"
+    ],
+    "other/chat.css": [
+      "SP",
+      "QuickAccess"
     ]
   },
   "patches": {
@@ -134,9 +141,174 @@
         }
       ]
     },
+    "Accent Color": {
+      "type": "dropdown",
+      "default": "Purple",
+      "values": {
+        "Steam Blue": {},
+        "Purple": {
+          "other/accent.css": [
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ],
+          "--kmg-accent": [
+            "#9d01fa",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "Violet": {
+          "other/accent.css": [
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ],
+          "--kmg-accent": [
+            "#b06cff",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "Pink": {
+          "other/accent.css": [
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ],
+          "--kmg-accent": [
+            "#ff4fa3",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "Red": {
+          "other/accent.css": [
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ],
+          "--kmg-accent": [
+            "#ff3b4e",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "Orange": {
+          "other/accent.css": [
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ],
+          "--kmg-accent": [
+            "#ff8a1f",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "Gold": {
+          "other/accent.css": [
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ],
+          "--kmg-accent": [
+            "#f5c518",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "Green": {
+          "other/accent.css": [
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ],
+          "--kmg-accent": [
+            "#3ddc84",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "Teal": {
+          "other/accent.css": [
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ],
+          "--kmg-accent": [
+            "#1fd1c1",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "White": {
+          "other/accent.css": [
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ],
+          "--kmg-accent": [
+            "#ffffff",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "Custom": {
+          "other/accent.css": [
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        }
+      },
+      "components": [
+        {
+          "name": "Custom Accent",
+          "type": "color-picker",
+          "on": "Custom",
+          "default": "#9d01fa",
+          "css_variable": "--kmg-accent",
+          "tabs": [
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        }
+      ]
+    },
     "Menu Opacity": {
       "type": "slider",
-      "default": "100%",
+      "default": "60%",
       "values": {
         "50%": {
           "--kmg-menu-alpha": [
@@ -212,9 +384,436 @@
         }
       }
     },
-    "Gameview Darkness": {
+    "Dialog Opacity": {
+      "type": "slider",
+      "default": "70%",
+      "values": {
+        "50%": {
+          "--kmg-dialog-alpha": [
+            "0.5",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "60%": {
+          "--kmg-dialog-alpha": [
+            "0.6",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "70%": {
+          "--kmg-dialog-alpha": [
+            "0.7",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "80%": {
+          "--kmg-dialog-alpha": [
+            "0.8",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "85%": {
+          "--kmg-dialog-alpha": [
+            "0.85",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "90%": {
+          "--kmg-dialog-alpha": [
+            "0.9",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "95%": {
+          "--kmg-dialog-alpha": [
+            "0.95",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "100%": {
+          "--kmg-dialog-alpha": [
+            "1",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        }
+      }
+    },
+    "Chat Opacity": {
+      "type": "slider",
+      "default": "80%",
+      "values": {
+        "50%": {
+          "--kmg-chat-alpha": [
+            "0.5",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "60%": {
+          "--kmg-chat-alpha": [
+            "0.6",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "70%": {
+          "--kmg-chat-alpha": [
+            "0.7",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "80%": {
+          "--kmg-chat-alpha": [
+            "0.8",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "85%": {
+          "--kmg-chat-alpha": [
+            "0.85",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "90%": {
+          "--kmg-chat-alpha": [
+            "0.9",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "95%": {
+          "--kmg-chat-alpha": [
+            "0.95",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        },
+        "100%": {
+          "--kmg-chat-alpha": [
+            "1",
+            "SP",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ]
+        }
+      }
+    },
+    "Selection Opacity": {
+      "type": "slider",
+      "default": "45%",
+      "values": {
+        "Original": {},
+        "20%": {
+          "other/selection.css": [
+            "MainMenu",
+            "QuickAccess",
+            "SP"
+          ],
+          "--kmg-select-alpha": [
+            "0.2",
+            "MainMenu",
+            "QuickAccess",
+            "SP"
+          ]
+        },
+        "30%": {
+          "other/selection.css": [
+            "MainMenu",
+            "QuickAccess",
+            "SP"
+          ],
+          "--kmg-select-alpha": [
+            "0.3",
+            "MainMenu",
+            "QuickAccess",
+            "SP"
+          ]
+        },
+        "45%": {
+          "other/selection.css": [
+            "MainMenu",
+            "QuickAccess",
+            "SP"
+          ],
+          "--kmg-select-alpha": [
+            "0.45",
+            "MainMenu",
+            "QuickAccess",
+            "SP"
+          ]
+        },
+        "60%": {
+          "other/selection.css": [
+            "MainMenu",
+            "QuickAccess",
+            "SP"
+          ],
+          "--kmg-select-alpha": [
+            "0.6",
+            "MainMenu",
+            "QuickAccess",
+            "SP"
+          ]
+        },
+        "70%": {
+          "other/selection.css": [
+            "MainMenu",
+            "QuickAccess",
+            "SP"
+          ],
+          "--kmg-select-alpha": [
+            "0.7",
+            "MainMenu",
+            "QuickAccess",
+            "SP"
+          ]
+        }
+      }
+    },
+    "Notification Opacity": {
       "type": "slider",
       "default": "60%",
+      "values": {
+        "20%": {
+          "--kmg-toast-alpha": [
+            "0.2",
+            "notificationtoasts.*"
+          ]
+        },
+        "30%": {
+          "--kmg-toast-alpha": [
+            "0.3",
+            "notificationtoasts.*"
+          ]
+        },
+        "40%": {
+          "--kmg-toast-alpha": [
+            "0.4",
+            "notificationtoasts.*"
+          ]
+        },
+        "50%": {
+          "--kmg-toast-alpha": [
+            "0.5",
+            "notificationtoasts.*"
+          ]
+        },
+        "60%": {
+          "--kmg-toast-alpha": [
+            "0.6",
+            "notificationtoasts.*"
+          ]
+        },
+        "70%": {
+          "--kmg-toast-alpha": [
+            "0.7",
+            "notificationtoasts.*"
+          ]
+        },
+        "80%": {
+          "--kmg-toast-alpha": [
+            "0.8",
+            "notificationtoasts.*"
+          ]
+        },
+        "90%": {
+          "--kmg-toast-alpha": [
+            "0.9",
+            "notificationtoasts.*"
+          ]
+        },
+        "100%": {
+          "--kmg-toast-alpha": [
+            "1",
+            "notificationtoasts.*"
+          ]
+        }
+      }
+    },
+    "Overlay Glass": {
+      "type": "checkbox",
+      "default": "Yes",
+      "values": {
+        "Yes": {
+          "other/overlay-glass.css": [
+            "MainMenu",
+            "QuickAccess"
+          ]
+        },
+        "No": {}
+      }
+    },
+    "In-Game Menu Style": {
+      "type": "checkbox",
+      "default": "Yes",
+      "values": {
+        "Yes": {
+          "other/ingame-menu.css": [
+            "MainMenu"
+          ]
+        },
+        "No": {}
+      }
+    },
+    "In-Game Dim": {
+      "type": "slider",
+      "default": "Off",
+      "values": {
+        "Steam": {},
+        "Off": {
+          "other/ingame-glass.css": [
+            "SP"
+          ],
+          "--kmg-ingame-dim": [
+            "0",
+            "SP"
+          ]
+        },
+        "10%": {
+          "other/ingame-glass.css": [
+            "SP"
+          ],
+          "--kmg-ingame-dim": [
+            "0.1",
+            "SP"
+          ]
+        },
+        "20%": {
+          "other/ingame-glass.css": [
+            "SP"
+          ],
+          "--kmg-ingame-dim": [
+            "0.2",
+            "SP"
+          ]
+        },
+        "30%": {
+          "other/ingame-glass.css": [
+            "SP"
+          ],
+          "--kmg-ingame-dim": [
+            "0.3",
+            "SP"
+          ]
+        },
+        "40%": {
+          "other/ingame-glass.css": [
+            "SP"
+          ],
+          "--kmg-ingame-dim": [
+            "0.4",
+            "SP"
+          ]
+        },
+        "50%": {
+          "other/ingame-glass.css": [
+            "SP"
+          ],
+          "--kmg-ingame-dim": [
+            "0.5",
+            "SP"
+          ]
+        }
+      }
+    },
+    "In-Game Bars Follow Menus": {
+      "type": "checkbox",
+      "default": "Yes",
+      "values": {
+        "Yes": {
+          "other/ingame-bars.css": [
+            "SP"
+          ]
+        },
+        "No": {}
+      }
+    },
+    "Text Shadow": {
+      "type": "dropdown",
+      "default": "Soft",
+      "values": {
+        "Off": {},
+        "Soft": {
+          "other/text-shadow.css": [
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ],
+          "other/text-shadow-bars.css": [
+            "SP"
+          ],
+          "--kmg-text-shadow": [
+            "0 0 3px rgba(0, 0, 0, 0.7), 0 1px 2px rgba(0, 0, 0, 0.6)",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*",
+            "SP"
+          ]
+        },
+        "Strong": {
+          "other/text-shadow.css": [
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*"
+          ],
+          "other/text-shadow-bars.css": [
+            "SP"
+          ],
+          "--kmg-text-shadow": [
+            "0 0 6px rgba(0, 0, 0, 0.9), 0 0 2px rgba(0, 0, 0, 0.9)",
+            "MainMenu",
+            "QuickAccess",
+            "notificationtoasts.*",
+            "SP"
+          ]
+        }
+      }
+    },
+    "Gameview Darkness": {
+      "type": "slider",
+      "default": "20%",
       "values": {
         "Original": {},
         "20%": {
@@ -266,7 +865,7 @@
     },
     "Online Badge Opacity": {
       "type": "slider",
-      "default": "40%",
+      "default": "20%",
       "values": {
         "0%": {
           "gameview/badge.css": [
@@ -326,7 +925,7 @@
     },
     "Play Bar Style": {
       "type": "dropdown",
-      "default": "Transparent",
+      "default": "Gradient + Blur",
       "values": {
         "Transparent": {},
         "Blur": {
@@ -377,7 +976,7 @@
     },
     "Play Bar Opacity": {
       "type": "slider",
-      "default": "33%",
+      "default": "65%",
       "values": {
         "10%": {
           "--kmg-bar-alpha": [
@@ -482,7 +1081,7 @@
     },
     "Official Hero Zoom": {
       "type": "slider",
-      "default": "100%",
+      "default": "150%",
       "values": {
         "100%": {
           "--kmg-zoom-official": [
@@ -524,7 +1123,7 @@
     },
     "Custom Hero Zoom": {
       "type": "slider",
-      "default": "180%",
+      "default": "150%",
       "values": {
         "100%": {
           "--kmg-zoom-custom": [
@@ -578,7 +1177,7 @@
     },
     "Zoom Fill Blur": {
       "type": "slider",
-      "default": "20px",
+      "default": "0px",
       "values": {
         "0px": {
           "--kmg-fill-blur": [
@@ -758,7 +1357,7 @@
     },
     "Lock Logo": {
       "type": "checkbox",
-      "default": "Yes",
+      "default": "No",
       "values": {
         "Yes": {
           "gameview/lockedlogo.css": [
@@ -848,7 +1447,7 @@
     },
     "Logo Size": {
       "type": "slider",
-      "default": "100%",
+      "default": "90%",
       "values": {
         "50%": {
           "--kmg-logo-scale": [
@@ -908,7 +1507,7 @@
     },
     "ProtonDB Badge Border": {
       "type": "dropdown",
-      "default": "Match Tier",
+      "default": "None",
       "values": {
         "Default": {},
         "Match Tier": {

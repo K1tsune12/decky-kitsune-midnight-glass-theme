@@ -1,0 +1,14 @@
+/*
+  Notification toasts (pop-ups shown over games and menus).
+  Separate opacity from the menus, so toasts can be lighter or more solid.
+*/
+:root {
+  --kmg-toast-alpha: 0.6;
+  --kmg-toast: color-mix(in srgb, var(--kmg-main) calc(var(--kmg-toast-alpha) * 100%), transparent);
+}
+
+.shorttemplates_ShortTemplate_29NLb,
+.shorttemplates_StandardTemplate_WgSlJ,
+.shorttemplates_IncomingCallToast_1hUOA {
+  background: var(--kmg-toast) !important;
+}

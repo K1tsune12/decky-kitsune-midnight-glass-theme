@@ -1,0 +1,1030 @@
+/*
+  Accent color: replaces Steam's blue (#1a9fff) with --kmg-accent.
+  Generated from the SteamUI stylesheets; each rule keeps its original alpha.
+*/
+
+._3D14Gr6XaDtndRA8ojG443._19WwgHXljoThfByC7B-MLW {
+  fill: var(--kmg-accent) !important;
+}
+
+._2Jn2RR1yUV9GJ6u9HN1dER._19WwgHXljoThfByC7B-MLW {
+  stroke: var(--kmg-accent) !important;
+}
+
+.HijmccPB1BKyhOwhX1EVl._3-_jME_xsuvgT3Dvq4bw_q, .HijmccPB1BKyhOwhX1EVl._3-_jME_xsuvgT3Dvq4bw_q:hover {
+  background-image: radial-gradient(color-mix(in srgb, var(--kmg-accent) 73.3%, transparent) 0%, var(--kmg-accent) 100%) !important;
+}
+
+.pagedsettings_PagedSettingsDialog_Title {
+  color: var(--kmg-accent) !important;
+}
+
+button.gamepaddialog_Button_1kn70.DialogButton.gpfocus.Primary, button.gamepaddialog_Button_1kn70.DialogButton:active.Primary, button.gamepaddialog_Button_1kn70.DialogButton:enabled.gpfocus.Primary, button.gamepaddialog_Button_1kn70.DialogButton:enabled:active.Primary, button.gamepaddialog_Button_1kn70.DialogButton:active.gpfocus.Primary, button.gamepaddialog_Button_1kn70.DialogButton:active:active.Primary, button.gamepaddialog_Button_1kn70.DialogButton:enabled:active:hover.gpfocus.Primary, button.gamepaddialog_Button_1kn70.DialogButton:enabled:active:hover:active.Primary {
+  background-color: var(--kmg-accent) !important;
+}
+
+.gamepaddialog_ToggleRail_2JtC3::before {
+  background-color: var(--kmg-accent) !important;
+}
+
+.gamepadpagedsettings_PagedSettingsDialog_PageListItem.gamepadpagedsettings_Active_22LLB {
+  background-image: linear-gradient(90deg, color-mix(in srgb, var(--kmg-accent) 22%, transparent) 0%, color-mix(in srgb, var(--kmg-accent) 0%, transparent) 100%) !important;
+}
+
+.gamepadpagedsettings_PagedSettingsDialog_PageListItem:focus {
+  background-image: linear-gradient(90deg, color-mix(in srgb, var(--kmg-accent) 40%, transparent) 0%, color-mix(in srgb, var(--kmg-accent) 0%, transparent) 100%) !important;
+  border-left-color: var(--kmg-accent) !important;
+}
+
+.gamepadslider_SliderTrack_Mq25N {
+  --left-track-color: var(--kmg-accent) !important;
+}
+
+.gamepadslider_SliderNotchTick_Fv1Ht.gamepadslider_TickActive_1gnUV {
+  background-color: var(--kmg-accent) !important;
+}
+
+.gamepadslider_CompoundSliderSubSliderLabelInternal_1dkDU {
+  color: var(--kmg-accent) !important;
+}
+
+.chatroom_DialogContent_InnerWidth .chatRoomTextChannel.ActiveTextChannel::after {
+  background-color: var(--kmg-accent) !important;
+}
+
+.chatentry_chatEntryControls_2gP0D .chatentry_chatSubmitButton_1IEiK:not(.chatentry_disabled_2GM2k) {
+  background-image: linear-gradient(136deg, rgb(0, 86, 214) 1%, var(--kmg-accent) 60%) !important;
+}
+
+.newlogindialog_Login_ZOBYq ._3t6QgWQmijDfZziPq3q3aQ {
+  background-color: var(--kmg-accent) !important;
+}
+
+.broadcastchatannouncement_GiveawayRegisterButton_3rlW-, .broadcastchatannouncement_GiveawayAlreadyRegistered_17sxy {
+  background-image: linear-gradient(120deg, var(--kmg-accent) 0%, rgb(0, 86, 214) 100%) !important;
+}
+
+.quickaccessvoicecontrolssteamdeck_DialogContent_InnerWidth .chatRoomTextChannel.ActiveTextChannel::after {
+  background-color: var(--kmg-accent) !important;
+}
+
+.chattabs_DialogContent_InnerWidth .chatRoomTextChannel.ActiveTextChannel::after {
+  background-color: var(--kmg-accent) !important;
+}
+
+.pagedcontent_DialogContent_InnerWidth .chatRoomTextChannel.ActiveTextChannel::after {
+  background-color: var(--kmg-accent) !important;
+}
+
+.friendslist_DialogContent_InnerWidth .chatRoomTextChannel.ActiveTextChannel::after {
+  background-color: var(--kmg-accent) !important;
+}
+
+.recentchatssteamdeck_DialogContent_InnerWidth .chatRoomTextChannel.ActiveTextChannel::after {
+  background-color: var(--kmg-accent) !important;
+}
+
+._11VWkpWTaRCptZe9_D-Twj ._1AHwgG8SLF8QL4SPHixfq {
+  background-color: var(--kmg-accent) !important;
+}
+
+._10UNx2XXsFmsHb86RCyofu ._2Qsf4rHzNzK6Z3UYN7tOFx:hover {
+  background-color: var(--kmg-accent) !important;
+}
+
+.BasicUI ._1HjkZ3ooQw-4TV518YPtvp .managefriends_Button_1ARlQ {
+  background-color: var(--kmg-accent) !important;
+}
+
+.BasicUI ._1HjkZ3ooQw-4TV518YPtvp .managefriends_Button_1ARlQ:active {
+  background-color: var(--kmg-accent) !important;
+}
+
+.friendinvites_DialogContent_InnerWidth .chatRoomTextChannel.ActiveTextChannel::after {
+  background-color: var(--kmg-accent) !important;
+}
+
+.unreadchatmessagesheadersteamdeck_DialogContent_InnerWidth .chatRoomTextChannel.ActiveTextChannel::after {
+  background-color: var(--kmg-accent) !important;
+}
+
+.voicechatheadersteamdeck_DialogContent_InnerWidth .chatRoomTextChannel.ActiveTextChannel::after {
+  background-color: var(--kmg-accent) !important;
+}
+
+.main_DialogContent_InnerWidth .chatRoomTextChannel.ActiveTextChannel::after {
+  background-color: var(--kmg-accent) !important;
+}
+
+.DialogContent_InnerWidth .chatRoomTextChannel.ActiveTextChannel::after {
+  background-color: var(--kmg-accent) !important;
+}
+
+.mainbrowser_URLBar_1CwIx .mainbrowser_NavigationButton_2mYcP.mainbrowser_Toggled_1Z6fd {
+  background-color: var(--kmg-accent) !important;
+}
+
+._2TFwkTHFarPR6odqac3Cp ._1ho9h4BUEDODxwgDLQIUxv {
+  color: var(--kmg-accent) !important;
+}
+
+.UxYSTRvz91S4oRJyUiYi6 {
+  color: var(--kmg-accent) !important;
+}
+
+.progressbar_ProgressBar_1-nHj ._2_0JonK7eKEvh8IoOvq0-B {
+  background-color: var(--kmg-accent) !important;
+}
+
+.progressbar_ProgressBarFieldStatus_Mlgx- .progressbar_TextContainer_p0xxK .progressbar_OperationText_1-WaO {
+  color: var(--kmg-accent) !important;
+}
+
+.moveappsdialog_MoveAppsBar_1f7qD {
+  background-color: var(--kmg-accent) !important;
+}
+
+.backupappsdialog_BackupAppsBar_1cpd2 {
+  background-color: var(--kmg-accent) !important;
+}
+
+.cloudconflict_RadioButton_2SNqC {
+  box-shadow: color-mix(in srgb, var(--kmg-accent) 0%, transparent) 0px 0px 0px 0px inset !important;
+}
+
+.cloudconflict_Active_2hegS .cloudconflict_RadioButton_2SNqC, .cloudconflict_Active_2hegS .cloudconflict_RadioButton_2SNqC:hover {
+  box-shadow: var(--kmg-accent) 0px 0px 0px 6px inset !important;
+}
+
+.appfilterpane_FilterStoreTag_1xPZw.appfilterpane_Selected_1w0iw {
+  background-color: var(--kmg-accent) !important;
+}
+
+.launchoptionsdialog_LaunchOptionDialog_LclHw .launchoptionsdialog_ButtonContainer_3H2Ge .launchoptionsdialog_PlayButton_3EWVu {
+  background-color: var(--kmg-accent) !important;
+}
+
+.controllerconfigurator_interstitial_SteamInputSide .controllerconfigurator_interstitial_SIHighlight {
+  color: var(--kmg-accent) !important;
+}
+
+.controllerconfigurator_interstitial_ActionSetLayout .controllerconfigurator_interstitial_ActivatorLabel {
+  color: var(--kmg-accent) !important;
+}
+
+.BasicUI ._3bkDosCzN8XKYX4oEnqgwc.Focusable:focus {
+  background-color: var(--kmg-accent) !important;
+}
+
+.BasicUI ._3bkDosCzN8XKYX4oEnqgwc.Focusable:focus::after {
+  background-image: linear-gradient(75deg, color-mix(in srgb, var(--kmg-accent) 0%, transparent) 33%, rgb(179, 223, 255) 50%, color-mix(in srgb, var(--kmg-accent) 0%, transparent) 66%) !important;
+}
+
+:not(._1Uq0lzZOxXrtOrOzmYTw3j) > .BasicUI ._3bkDosCzN8XKYX4oEnqgwc:hover {
+  background-color: var(--kmg-accent) !important;
+}
+
+:not(._1Uq0lzZOxXrtOrOzmYTw3j) > .BasicUI ._3bkDosCzN8XKYX4oEnqgwc:hover::after {
+  background-image: linear-gradient(75deg, color-mix(in srgb, var(--kmg-accent) 0%, transparent) 33%, rgb(179, 223, 255) 50%, color-mix(in srgb, var(--kmg-accent) 0%, transparent) 66%) !important;
+}
+
+button.controllerconfiguratormapping_Button_hv-G3.DialogButton.gpfocus.Primary, button.controllerconfiguratormapping_Button_hv-G3.DialogButton:active.Primary, button.controllerconfiguratormapping_Button_hv-G3.DialogButton:enabled.gpfocus.Primary, button.controllerconfiguratormapping_Button_hv-G3.DialogButton:enabled:active.Primary, button.controllerconfiguratormapping_Button_hv-G3.DialogButton:active.gpfocus.Primary, button.controllerconfiguratormapping_Button_hv-G3.DialogButton:active:active.Primary, button.controllerconfiguratormapping_Button_hv-G3.DialogButton:enabled:active:hover.gpfocus.Primary, button.controllerconfiguratormapping_Button_hv-G3.DialogButton:enabled:active:hover:active.Primary {
+  background-color: var(--kmg-accent) !important;
+}
+
+.controllerconfiguratormapping_ToggleRail_2kcv1::before {
+  background-color: var(--kmg-accent) !important;
+}
+
+._17CvBVp1rwECBn2FRb4oMA._12HxQsEbUjqKEsui08Pem3.GineWFfXJPxgVFS_NZZtz, ._17CvBVp1rwECBn2FRb4oMA._12HxQsEbUjqKEsui08Pem3.Download, ._17CvBVp1rwECBn2FRb4oMA._12HxQsEbUjqKEsui08Pem3.Update, ._17CvBVp1rwECBn2FRb4oMA._12HxQsEbUjqKEsui08Pem3.PreLoad, ._17CvBVp1rwECBn2FRb4oMA._12HxQsEbUjqKEsui08Pem3.Install, ._17CvBVp1rwECBn2FRb4oMA._12HxQsEbUjqKEsui08Pem3.Pause {
+  background-color: var(--kmg-accent) !important;
+}
+
+.gamepadtabbedpage_TabCountBadge_19sQx {
+  background-color: var(--kmg-accent) !important;
+}
+
+.steamdeckcompatfilter_RadioButton_10D3Y {
+  box-shadow: color-mix(in srgb, var(--kmg-accent) 0%, transparent) 0px 0px 0px 0px inset !important;
+}
+
+.steamdeckcompatfilter_Active_2wFsa .steamdeckcompatfilter_RadioButton_10D3Y, .steamdeckcompatfilter_Active_2wFsa .steamdeckcompatfilter_RadioButton_10D3Y:hover {
+  box-shadow: var(--kmg-accent) 0px 0px 0px 4px inset !important;
+}
+
+button.controllerconfiguratoriconpicker_IconButton_1VO-Y.DialogButton._kSxSmxSNK3KLrF5sqSmI, button.controllerconfiguratoriconpicker_IconButton_1VO-Y.DialogButton:enabled.gpfocus._kSxSmxSNK3KLrF5sqSmI, button.controllerconfiguratoriconpicker_IconButton_1VO-Y.DialogButton:enabled:active._kSxSmxSNK3KLrF5sqSmI {
+  outline-color: var(--kmg-accent) !important;
+}
+
+:root {
+  --virtualmenu-accent: var(--kmg-accent) !important;
+  --virtualmenupointer-color: var(--kmg-accent) !important;
+}
+
+.gamepaduiappoverlayvirtualmenucontainer_SelectionArc_2Znw2 {
+  fill: var(--kmg-accent) !important;
+}
+
+button._1pqdnNXI2o4kBW6FVZDAvX.DialogButton.gpfocus.Primary, button._1pqdnNXI2o4kBW6FVZDAvX.DialogButton:active.Primary, button._1pqdnNXI2o4kBW6FVZDAvX.DialogButton:enabled.gpfocus.Primary, button._1pqdnNXI2o4kBW6FVZDAvX.DialogButton:enabled:active.Primary, button._1pqdnNXI2o4kBW6FVZDAvX.DialogButton:active.gpfocus.Primary, button._1pqdnNXI2o4kBW6FVZDAvX.DialogButton:active:active.Primary, button._1pqdnNXI2o4kBW6FVZDAvX.DialogButton:enabled:active:hover.gpfocus.Primary, button._1pqdnNXI2o4kBW6FVZDAvX.DialogButton:enabled:active:hover:active.Primary {
+  background-color: var(--kmg-accent) !important;
+}
+
+._3AYKfNpTA3jTlU7mXMNjJz::before {
+  background-color: var(--kmg-accent) !important;
+}
+
+._30Cfa_RtfCcvNNH7_LcUON.Sb0p46Cgo4MTC61JoraZ0._20Kdt9clH6r-QK7ByiOp8T, ._30Cfa_RtfCcvNNH7_LcUON.Sb0p46Cgo4MTC61JoraZ0.Download, ._30Cfa_RtfCcvNNH7_LcUON.Sb0p46Cgo4MTC61JoraZ0.Update, ._30Cfa_RtfCcvNNH7_LcUON.Sb0p46Cgo4MTC61JoraZ0.PreLoad, ._30Cfa_RtfCcvNNH7_LcUON.Sb0p46Cgo4MTC61JoraZ0.Install, ._30Cfa_RtfCcvNNH7_LcUON.Sb0p46Cgo4MTC61JoraZ0.Pause {
+  background-color: var(--kmg-accent) !important;
+}
+
+button._93UdZeArAzCLQTPIWH_2p.DialogButton.gpfocus.Primary, button._93UdZeArAzCLQTPIWH_2p.DialogButton:active.Primary, button._93UdZeArAzCLQTPIWH_2p.DialogButton:enabled.gpfocus.Primary, button._93UdZeArAzCLQTPIWH_2p.DialogButton:enabled:active.Primary, button._93UdZeArAzCLQTPIWH_2p.DialogButton:active.gpfocus.Primary, button._93UdZeArAzCLQTPIWH_2p.DialogButton:active:active.Primary, button._93UdZeArAzCLQTPIWH_2p.DialogButton:enabled:active:hover.gpfocus.Primary, button._93UdZeArAzCLQTPIWH_2p.DialogButton:enabled:active:hover:active.Primary {
+  background-color: var(--kmg-accent) !important;
+}
+
+.rO-Zk4ZilDPlazAE6kzBW::before {
+  background-color: var(--kmg-accent) !important;
+}
+
+._3Gj2wOUvSdrsCfUf7w3k1i._2T2n7vEF5xpIxDqqSCE2TP.De4_oli1b_gElJt-VUogm, ._3Gj2wOUvSdrsCfUf7w3k1i._2T2n7vEF5xpIxDqqSCE2TP.Download, ._3Gj2wOUvSdrsCfUf7w3k1i._2T2n7vEF5xpIxDqqSCE2TP.Update, ._3Gj2wOUvSdrsCfUf7w3k1i._2T2n7vEF5xpIxDqqSCE2TP.PreLoad, ._3Gj2wOUvSdrsCfUf7w3k1i._2T2n7vEF5xpIxDqqSCE2TP.Install, ._3Gj2wOUvSdrsCfUf7w3k1i._2T2n7vEF5xpIxDqqSCE2TP.Pause {
+  background-color: var(--kmg-accent) !important;
+}
+
+.controllerconfiguratorgyrobuttonpicker_LeftHandSideStickPress_1fRfj.gpfocus::before {
+  filter: drop-shadow(color-mix(in srgb, var(--kmg-accent) 56.5%, transparent) 0px 0px 10px) !important;
+}
+
+.controllerconfiguratorgyrobuttonpicker_ButtonActive_2NnqD {
+  filter: contrast(10) invert(0.44) sepia(1) saturate(5) hue-rotate(175deg) drop-shadow(color-mix(in srgb, var(--kmg-accent) 56.5%, transparent) 0px 0px 2px) !important;
+}
+
+.controllerconfiguratorchoosebinding_KeyboardKey_NoRFS.gpfocus {
+  filter: drop-shadow(color-mix(in srgb, var(--kmg-accent) 56.5%, transparent) 0px 0px 10px) !important;
+}
+
+.controllerconfiguratorchoosebinding_KeyboardKey_NoRFS.controllerconfiguratorchoosebinding_SelectedBinding_CX4Dp {
+  background-color: var(--kmg-accent) !important;
+  border-top-color: var(--kmg-accent) !important;
+  border-right-color: var(--kmg-accent) !important;
+  border-bottom-color: var(--kmg-accent) !important;
+  border-left-color: var(--kmg-accent) !important;
+}
+
+.controllerconfiguratorchoosebinding_KeyboardKey_NoRFS.controllerconfiguratorchoosebinding_SelectedBinding_CX4Dp {
+  background-color: var(--kmg-accent) !important;
+}
+
+.controllerconfiguratorchoosebinding_GamepadKey_1llZa.gpfocus {
+  filter: drop-shadow(color-mix(in srgb, var(--kmg-accent) 56.5%, transparent) 0px 0px 10px) !important;
+}
+
+.controllerconfiguratorchoosebinding_GamepadKey_1llZa.controllerconfiguratorchoosebinding_SelectedBinding_CX4Dp {
+  background-color: var(--kmg-accent) !important;
+  border-top-color: var(--kmg-accent) !important;
+  border-right-color: var(--kmg-accent) !important;
+  border-bottom-color: var(--kmg-accent) !important;
+  border-left-color: var(--kmg-accent) !important;
+}
+
+._3yP_pf4vx1Q4W0mt2DR32P.gpfocus {
+  filter: drop-shadow(color-mix(in srgb, var(--kmg-accent) 56.5%, transparent) 0px 0px 10px) !important;
+}
+
+._3yP_pf4vx1Q4W0mt2DR32P.controllerconfiguratorchoosebinding_SelectedBinding_CX4Dp {
+  background-color: var(--kmg-accent) !important;
+  border-top-color: var(--kmg-accent) !important;
+  border-right-color: var(--kmg-accent) !important;
+  border-bottom-color: var(--kmg-accent) !important;
+  border-left-color: var(--kmg-accent) !important;
+}
+
+.controllerconfiguratorchoosebinding_MouseKey_19SMS.gpfocus {
+  filter: drop-shadow(color-mix(in srgb, var(--kmg-accent) 56.5%, transparent) 0px 0px 10px) !important;
+}
+
+.controllerconfiguratorchoosebinding_MouseKey_19SMS.controllerconfiguratorchoosebinding_SelectedBinding_CX4Dp {
+  background-color: var(--kmg-accent) !important;
+  border-top-color: var(--kmg-accent) !important;
+  border-right-color: var(--kmg-accent) !important;
+  border-bottom-color: var(--kmg-accent) !important;
+  border-left-color: var(--kmg-accent) !important;
+}
+
+._1Ze1RZ7I8e5cSlaWAl48bh.gpfocus {
+  filter: drop-shadow(color-mix(in srgb, var(--kmg-accent) 56.5%, transparent) 0px 0px 10px) !important;
+}
+
+._1Ze1RZ7I8e5cSlaWAl48bh.controllerconfiguratorchoosebinding_SelectedBinding_CX4Dp {
+  background-color: var(--kmg-accent) !important;
+  border-top-color: var(--kmg-accent) !important;
+  border-right-color: var(--kmg-accent) !important;
+  border-bottom-color: var(--kmg-accent) !important;
+  border-left-color: var(--kmg-accent) !important;
+}
+
+.eUq_I0gb5u7xNXESXeTsl .controllerconfiguratorchoosebinding_SelectedBinding_CX4Dp {
+  background-color: var(--kmg-accent) !important;
+}
+
+.controllerconfiguratorchoosebinding_TriggerButton_2MjBd.gpfocus, .controllerconfiguratorchoosebinding_BumperButton_2swvc.gpfocus {
+  filter: drop-shadow(color-mix(in srgb, var(--kmg-accent) 56.5%, transparent) 0px 0px 10px) !important;
+}
+
+.controllerconfiguratorchoosebinding_TriggerButton_2MjBd.controllerconfiguratorchoosebinding_SelectedBinding_CX4Dp, .controllerconfiguratorchoosebinding_BumperButton_2swvc.controllerconfiguratorchoosebinding_SelectedBinding_CX4Dp {
+  background-color: var(--kmg-accent) !important;
+  border-top-color: var(--kmg-accent) !important;
+  border-right-color: var(--kmg-accent) !important;
+  border-bottom-color: var(--kmg-accent) !important;
+  border-left-color: var(--kmg-accent) !important;
+}
+
+.controllerconfiguratorchoosebinding_SelectButton_3i-XV.gpfocus, .controllerconfiguratorchoosebinding_StartButton_3s28A.gpfocus {
+  filter: drop-shadow(color-mix(in srgb, var(--kmg-accent) 56.5%, transparent) 0px 0px 10px) !important;
+}
+
+.controllerconfiguratorchoosebinding_SelectButton_3i-XV.controllerconfiguratorchoosebinding_SelectedBinding_CX4Dp, .controllerconfiguratorchoosebinding_StartButton_3s28A.controllerconfiguratorchoosebinding_SelectedBinding_CX4Dp {
+  background-color: var(--kmg-accent) !important;
+  border-top-color: var(--kmg-accent) !important;
+  border-right-color: var(--kmg-accent) !important;
+  border-bottom-color: var(--kmg-accent) !important;
+  border-left-color: var(--kmg-accent) !important;
+}
+
+.controllerconfiguratorchoosebinding_LEDButton_3U3h5.gpfocus {
+  filter: drop-shadow(color-mix(in srgb, var(--kmg-accent) 56.5%, transparent) 0px 0px 10px) !important;
+}
+
+.controllerconfiguratorchoosebinding_LEDButton_3U3h5.controllerconfiguratorchoosebinding_SelectedBinding_CX4Dp {
+  background-color: var(--kmg-accent) !important;
+  border-top-color: var(--kmg-accent) !important;
+  border-right-color: var(--kmg-accent) !important;
+  border-bottom-color: var(--kmg-accent) !important;
+  border-left-color: var(--kmg-accent) !important;
+}
+
+.controllerconfiguratorchoosebinding_CardinalButtonGroup_3-2qP.gpfocus::before {
+  filter: drop-shadow(color-mix(in srgb, var(--kmg-accent) 56.5%, transparent) 0px 0px 10px) !important;
+}
+
+.controllerconfiguratorchoosebinding_CardinalButtonGroupButton_4nzjX.controllerconfiguratorchoosebinding_SelectedBinding_CX4Dp .eUq_I0gb5u7xNXESXeTsl {
+  color: var(--kmg-accent) !important;
+}
+
+.controllerconfiguratorchoosebinding_CardinalButtonGroupButton_4nzjX.gpfocus .eUq_I0gb5u7xNXESXeTsl {
+  filter: drop-shadow(color-mix(in srgb, var(--kmg-accent) 56.5%, transparent) 0px 0px 10px) !important;
+}
+
+.gyroscopenoisebar_GyroBarField_2OnwI .gyroscopenoisebar_ProgressBar_2VCd- .gyroscopenoisebar_Percent_2kHca {
+  background-color: var(--kmg-accent) !important;
+}
+
+.controllerconfiguratorchooseconfiguration_ConfigurationButton_2luCN.controllerconfiguratorchooseconfiguration_Selected_Gp6XG {
+  border-left-color: var(--kmg-accent) !important;
+}
+
+.deckverified_LearnMorePC_3OSxY, .deckverified_LearnMore_1Vhpn {
+  background-color: var(--kmg-accent) !important;
+}
+
+.appproperties_AppProperties_1FyBL .DialogBody .appproperties_BlueHighlight_1KmR8 {
+  color: var(--kmg-accent) !important;
+}
+
+.familysharedcomponents_ExpandRowButton_2a0Yy.familysharedcomponents_ExpandRowButton_2a0Yy:hover {
+  background-color: var(--kmg-accent) !important;
+}
+
+._3O5JysTXdgVLsBiJ4XmWBI {
+  color: var(--kmg-accent) !important;
+}
+
+._1kyPoKPv8_QS8nK7zedHW ._3ggB6QN4NkLZyOYn8xj5N7 {
+  background-color: var(--kmg-accent) !important;
+}
+
+._7EGqd8bdiXJBd2fj5Hh8r ._2sQtvR60AbFF5UzDwY9hit._1gKI37LOWj1Df3QSnxvKyF {
+  background-color: var(--kmg-accent) !important;
+}
+
+._1f9_BgoyE1cjqyeKD8dh9u .YzIcpcz4oFx-nndxro5jE .hXJt8CFzzitOG3moJEGg- {
+  color: var(--kmg-accent) !important;
+}
+
+.mZYRu1dN5Q9aQ1r3Cq_NE ._3qU1y0b7iBL_tHtWv97ff9 {
+  color: var(--kmg-accent) !important;
+}
+
+._28eIRmQ229ntDIyQXTn3Ub._2kVw_wgJd5TfnNePlpwmN {
+  background-color: var(--kmg-accent) !important;
+}
+
+._28eIRmQ229ntDIyQXTn3Ub._2kVw_wgJd5TfnNePlpwmN._36CGU2t5Vavx0_9dwem6kb {
+  background-color: var(--kmg-accent) !important;
+}
+
+._2T45kYJmyvQWyxytQeohuY._3JYigpIF46lZDATkhxHZmZ {
+  background-color: var(--kmg-accent) !important;
+}
+
+._2T45kYJmyvQWyxytQeohuY._3JYigpIF46lZDATkhxHZmZ:hover, ._2T45kYJmyvQWyxytQeohuY._3JYigpIF46lZDATkhxHZmZ:active {
+  background-color: var(--kmg-accent) !important;
+}
+
+.QFVXM_1rWs04OyJDUaCom ._1yTI8Tgt40Qr-TGHTgv2Pr ._2a5sFsHTsMbjwFP7WH4QIB .PNDAt1rt4GBfwzzelpFO0 {
+  color: var(--kmg-accent) !important;
+}
+
+.xgdATZWePJFXYrEbin8y9 ._2Kwx2_3UQZVDF9eWFVuk06 {
+  background-color: var(--kmg-accent) !important;
+}
+
+.m1-1F-uygFDU5cdXSV1Jz ._1qABO0SwwMTGrwO3UvqE-g {
+  color: var(--kmg-accent) !important;
+}
+
+._2-7fqz03LhYHKEBI-HwIPq ._3yu2_I6JERouGkz0YLwnuX ._1u3MRQ0ABDU4GSI-cGGiQ5 {
+  stroke: var(--kmg-accent) !important;
+}
+
+.UJn_t5bdfyjDFBCTAl2bL {
+  color: var(--kmg-accent) !important;
+}
+
+._6em9hiNtkrdaHE8eVfq0P ._365PZ8BVgd7sz6-xR9E9yb ._1vrXP23Jvmwoj70Yk81cnc {
+  background-color: var(--kmg-accent) !important;
+}
+
+._1rhLTraGkRDOPJslCL3i9C:hover, ._1rhLTraGkRDOPJslCL3i9C._2_K-vDkSsSw6FxrfZL-ScT {
+  border-top-color: var(--kmg-accent) !important;
+  border-right-color: var(--kmg-accent) !important;
+  border-bottom-color: var(--kmg-accent) !important;
+  border-left-color: var(--kmg-accent) !important;
+}
+
+._3F_GfwciLV6y6FOEIe3_S5 {
+  color: var(--kmg-accent) !important;
+}
+
+._1_VGcqhwscnT-kPnPb2c22 ._1wPm9-zsQlqLzb92eR77lC._3VSFddY_9-Sh1I3ByUwmD4 > svg {
+  color: var(--kmg-accent) !important;
+}
+
+._2__OPNuJ5jPGfN7LuKW-Qw ._1U3RGrxKiDB_p4u4cKiixk > svg {
+  color: var(--kmg-accent) !important;
+}
+
+._2JvQPEForHWVgljtxxAwRP {
+  color: var(--kmg-accent) !important;
+}
+
+._3SETpnYbAtvmO7w4gpOCtK[data-position="right"] ._1lcizT_Nbxsk484XzTtcFf {
+  border-left-color: var(--kmg-accent) !important;
+}
+
+._3SETpnYbAtvmO7w4gpOCtK[data-position="left"] ._1lcizT_Nbxsk484XzTtcFf {
+  border-right-color: var(--kmg-accent) !important;
+}
+
+._3SETpnYbAtvmO7w4gpOCtK[data-position="below"] ._1lcizT_Nbxsk484XzTtcFf {
+  border-top-color: var(--kmg-accent) !important;
+}
+
+.U5rUz_v__RNtvgBIfzYPx .QElcgyWe3uBzxVDmrFao2 ._3LzXZkJi8bsPoHzXEDbLER {
+  color: var(--kmg-accent) !important;
+}
+
+.HYloJyr41RFbSFoc8RY3w:hover svg {
+  color: var(--kmg-accent) !important;
+}
+
+.HYloJyr41RFbSFoc8RY3w:hover:active svg {
+  color: var(--kmg-accent) !important;
+}
+
+._3Rk61GMptJMR1oaiUCjLyL:hover {
+  background-color: var(--kmg-accent) !important;
+}
+
+._2xWDffvlKnKW8aDKyFyg0n._1TaBg1kjP1wN-j8LZ0VyhZ {
+  color: var(--kmg-accent) !important;
+}
+
+._3eJZ4fur1aqy1ebzHlGfaW::after {
+  background-color: var(--kmg-accent) !important;
+}
+
+.vrdashboard_DashboardBarPopupListItem_1LhEM::before {
+  background-color: var(--kmg-accent) !important;
+}
+
+.contentmanagement_DriveUsageGames_22KCi {
+  background-color: var(--kmg-accent) !important;
+}
+
+.DesktopUI .library_ContextMenuAction_Z5iAX.Download, .DesktopUI .library_ContextMenuAction_Z5iAX.Update, .DesktopUI .library_ContextMenuAction_Z5iAX.PreLoad, .DesktopUI .library_ContextMenuAction_Z5iAX.Resume, .DesktopUI .library_ContextMenuAction_Z5iAX.Pause, .DesktopUI .library_ContextMenuAction_Z5iAX.BorrowApp, .DesktopUI .library_ContextMenuAction_Z5iAX.Stop, .DesktopUI .library_ContextMenuAction_Z5iAX.Cancel, .DesktopUI .library_ContextMenuAction_Z5iAX.Install, .DesktopUI .library_ContextMenuAction_Z5iAX.PurchaseApp {
+  background-image: linear-gradient(-45deg, rgb(0, 86, 214) 8%, var(--kmg-accent) 90%) !important;
+}
+
+.DesktopUI .library_ContextMenuAction_Z5iAX.Download:hover, .DesktopUI .library_ContextMenuAction_Z5iAX.Download:focus, .DesktopUI .library_ContextMenuAction_Z5iAX.Update:hover, .DesktopUI .library_ContextMenuAction_Z5iAX.Update:focus, .DesktopUI .library_ContextMenuAction_Z5iAX.PreLoad:hover, .DesktopUI .library_ContextMenuAction_Z5iAX.PreLoad:focus, .DesktopUI .library_ContextMenuAction_Z5iAX.Resume:hover, .DesktopUI .library_ContextMenuAction_Z5iAX.Resume:focus, .DesktopUI .library_ContextMenuAction_Z5iAX.Pause:hover, .DesktopUI .library_ContextMenuAction_Z5iAX.Pause:focus, .DesktopUI .library_ContextMenuAction_Z5iAX.BorrowApp:hover, .DesktopUI .library_ContextMenuAction_Z5iAX.BorrowApp:focus, .DesktopUI .library_ContextMenuAction_Z5iAX.Stop:hover, .DesktopUI .library_ContextMenuAction_Z5iAX.Stop:focus, .DesktopUI .library_ContextMenuAction_Z5iAX.Cancel:hover, .DesktopUI .library_ContextMenuAction_Z5iAX.Cancel:focus, .DesktopUI .library_ContextMenuAction_Z5iAX.Install:hover, .DesktopUI .library_ContextMenuAction_Z5iAX.Install:focus, .DesktopUI .library_ContextMenuAction_Z5iAX.PurchaseApp:hover, .DesktopUI .library_ContextMenuAction_Z5iAX.PurchaseApp:focus {
+  background-image: linear-gradient(-45deg, var(--kmg-accent) 8%, rgb(0, 187, 255) 90%) !important;
+}
+
+.activateproductdialog_InfoIcon_8Uz6L {
+  color: var(--kmg-accent) !important;
+}
+
+.activateproductdialog_ProductName_2yUw3 {
+  color: var(--kmg-accent) !important;
+}
+
+.mainmenu_Item_2w9Tp .mainmenu_ActiveDot_1uLVH {
+  background-color: var(--kmg-accent) !important;
+}
+
+.gamepadcontextmenu_contextMenuItem_1sdvo.gamepadcontextmenu_Focused_X813r.gamepadcontextmenu_Emphasis_1viOG, .gamepadcontextmenu_contextMenuItem_1sdvo.gamepadcontextmenu_Focused_X813r.Download, .gamepadcontextmenu_contextMenuItem_1sdvo.gamepadcontextmenu_Focused_X813r.Update, .gamepadcontextmenu_contextMenuItem_1sdvo.gamepadcontextmenu_Focused_X813r.PreLoad, .gamepadcontextmenu_contextMenuItem_1sdvo.gamepadcontextmenu_Focused_X813r.Install, .gamepadcontextmenu_contextMenuItem_1sdvo.gamepadcontextmenu_Focused_X813r.Pause {
+  background-color: var(--kmg-accent) !important;
+}
+
+.animatedcallout_AnimatedCallout_PVXAA .animatedcallout_Bob_33nAF, .animatedcallout_AnimatedCallout_PVXAA .animatedcallout_Pulse_2pLSo {
+  border-top-color: var(--kmg-accent) !important;
+  border-right-color: var(--kmg-accent) !important;
+  border-bottom-color: var(--kmg-accent) !important;
+  border-left-color: var(--kmg-accent) !important;
+}
+
+.animatedcallout_CalloutMessage_239mo .animatedcallout_Wiggle_26whv {
+  border-top-color: var(--kmg-accent) !important;
+  border-right-color: var(--kmg-accent) !important;
+  border-bottom-color: var(--kmg-accent) !important;
+  border-left-color: var(--kmg-accent) !important;
+}
+
+.appactionbutton_WaitingForShutdownSpinner_1I-5Y {
+  border-top-color: var(--kmg-accent) !important;
+  border-left-color: var(--kmg-accent) !important;
+}
+
+.BasicUI .appactionbutton_ButtonChild_2AzIX.Focusable:focus {
+  background-color: var(--kmg-accent) !important;
+}
+
+.BasicUI .appactionbutton_ButtonChild_2AzIX.Focusable:focus::after {
+  background-image: linear-gradient(75deg, color-mix(in srgb, var(--kmg-accent) 0%, transparent) 33%, rgb(179, 223, 255) 50%, color-mix(in srgb, var(--kmg-accent) 0%, transparent) 66%) !important;
+}
+
+:not(.appactionbutton_Disabled_1Pb6P) > .BasicUI .appactionbutton_ButtonChild_2AzIX:hover {
+  background-color: var(--kmg-accent) !important;
+}
+
+:not(.appactionbutton_Disabled_1Pb6P) > .BasicUI .appactionbutton_ButtonChild_2AzIX:hover::after {
+  background-image: linear-gradient(75deg, color-mix(in srgb, var(--kmg-accent) 0%, transparent) 33%, rgb(179, 223, 255) 50%, color-mix(in srgb, var(--kmg-accent) 0%, transparent) 66%) !important;
+}
+
+.BasicUI .appdetailsplaysection_MenuButton_3qDWQ.Focusable:focus.appdetailsplaysection_Favorited_2WaHZ svg path {
+  fill: var(--kmg-accent) !important;
+}
+
+.BasicUI .appdetailsplaysection_MenuButton_3qDWQ.appdetailsplaysection_FavoriteButton_21hXW.appdetailsplaysection_Favorited_2WaHZ svg path {
+  fill: var(--kmg-accent) !important;
+}
+
+.BasicUI .appdetailsplaysection_DetailsProgressContainer_25YVD .appdetailsplaysection_DetailsProgressBar_1FnTq {
+  background-color: var(--kmg-accent) !important;
+}
+
+.appdetailsplaysection_CloudStatusLabel_fUTbl ._2QVGKFXgbKWshQ9KbbXqpb, .appdetailsplaysection_CloudStatusLabel_fUTbl ._1QqBvPhXFxnS3S0ay1fn_k {
+  color: var(--kmg-accent) !important;
+}
+
+.BasicUI .appdetailsplaysection_ButtonChild_14LCw.Focusable:focus {
+  background-color: var(--kmg-accent) !important;
+}
+
+.BasicUI .appdetailsplaysection_ButtonChild_14LCw.Focusable:focus::after {
+  background-image: linear-gradient(75deg, color-mix(in srgb, var(--kmg-accent) 0%, transparent) 33%, rgb(179, 223, 255) 50%, color-mix(in srgb, var(--kmg-accent) 0%, transparent) 66%) !important;
+}
+
+:not(._2L_o4bH4BMiXc3lAxC8u29) > .BasicUI .appdetailsplaysection_ButtonChild_14LCw:hover {
+  background-color: var(--kmg-accent) !important;
+}
+
+:not(._2L_o4bH4BMiXc3lAxC8u29) > .BasicUI .appdetailsplaysection_ButtonChild_14LCw:hover::after {
+  background-image: linear-gradient(75deg, color-mix(in srgb, var(--kmg-accent) 0%, transparent) 33%, rgb(179, 223, 255) 50%, color-mix(in srgb, var(--kmg-accent) 0%, transparent) 66%) !important;
+}
+
+.BasicUI .appdetailsachievementssection_AchievementProgressContainer_3ns91 .appdetailsachievementssection_AchievementProgress_3Rm36 {
+  background-color: var(--kmg-accent) !important;
+}
+
+.artworkmodal_FileDetails_1-MBE .artworkmodal_Caption_2yt71 {
+  color: var(--kmg-accent) !important;
+}
+
+.settings_SettingsDialogLink_2nfit.DesktopUI, .DesktopUI .settings_SettingsDialogLink_2nfit {
+  color: var(--kmg-accent) !important;
+}
+
+._1bZTWHCV-uVaS5pEQLn-0Z {
+  color: var(--kmg-accent) !important;
+}
+
+.BasicUI .downloads_DownloadsPage_1bq4x ._1XjtfRHLm0-7aFDsMlcIl- .FmfZJt_PKB2p0mdDnNZ1a.Focusable:focus {
+  background-color: var(--kmg-accent) !important;
+}
+
+.BasicUI .downloads_DownloadsPage_1bq4x ._1XjtfRHLm0-7aFDsMlcIl- .FmfZJt_PKB2p0mdDnNZ1a.Focusable:focus::after {
+  background-image: linear-gradient(75deg, color-mix(in srgb, var(--kmg-accent) 0%, transparent) 33%, rgb(179, 223, 255) 50%, color-mix(in srgb, var(--kmg-accent) 0%, transparent) 66%) !important;
+}
+
+:not(._1z325vU83sYraLYJ00JlPq) > .BasicUI .downloads_DownloadsPage_1bq4x ._1XjtfRHLm0-7aFDsMlcIl- .FmfZJt_PKB2p0mdDnNZ1a:hover {
+  background-color: var(--kmg-accent) !important;
+}
+
+:not(._1z325vU83sYraLYJ00JlPq) > .BasicUI .downloads_DownloadsPage_1bq4x ._1XjtfRHLm0-7aFDsMlcIl- .FmfZJt_PKB2p0mdDnNZ1a:hover::after {
+  background-image: linear-gradient(75deg, color-mix(in srgb, var(--kmg-accent) 0%, transparent) 33%, rgb(179, 223, 255) 50%, color-mix(in srgb, var(--kmg-accent) 0%, transparent) 66%) !important;
+}
+
+.downloads_SectionItem_1VNuY.downloads_Active_IbePL .downloads_Button_3oavR.DialogButton:enabled {
+  background-image: linear-gradient(314.13deg, rgb(0, 86, 214) -22.81%, var(--kmg-accent) 119.67%) !important;
+}
+
+.BasicUI .downloads_SectionItem_1VNuY.downloads_Active_IbePL .downloads_Button_3oavR.DialogButton:enabled {
+  background-color: var(--kmg-accent) !important;
+}
+
+.downloads_SectionItem_1VNuY.downloads_Active_IbePL .downloads_Button_3oavR.DialogButton:enabled:hover, .downloads_SectionItem_1VNuY.downloads_Active_IbePL .downloads_Button_3oavR.DialogButton:enabled:focus {
+  background-image: linear-gradient(314.13deg, rgb(0, 86, 214) -22.81%, var(--kmg-accent) 119.67%) !important;
+}
+
+.downloads_SectionItemStatus_1Sygg .downloads_ProgressBar_1vMU1 div {
+  background-color: var(--kmg-accent) !important;
+}
+
+.downloads_SectionItemStatus_1Sygg .downloads_ProgressBar_1vMU1._2mLZnQr2HzWQ1K8D8xouc- div {
+  background-color: color-mix(in srgb, var(--kmg-accent) 50%, transparent) !important;
+}
+
+.downloads_AutoUpdateHours_117rQ._2hSrM0aaC2uY2y83PI0NOr:hover .downloads_UpdateHours_34F9w, .downloads_AutoUpdateHours_117rQ._2hSrM0aaC2uY2y83PI0NOr:hover.downloads_NoHours_Sil68 {
+  color: var(--kmg-accent) !important;
+}
+
+.downloads_PatchNotes_3kXEp {
+  color: var(--kmg-accent) !important;
+}
+
+.E77_ojZbdMlTc1bWOUTC8 {
+  background-color: var(--kmg-accent) !important;
+}
+
+._2LWo2qq9d-zuglW2VlM_Xu:hover ._35T9nZ2RsVs8kf7OMPlaxe {
+  color: var(--kmg-accent) !important;
+}
+
+.downloadgraph_DownloadGraph_1BxZD .downloadgraph_GraphBarWrapper_gpPxC {
+  color: color-mix(in srgb, var(--kmg-accent) 50%, transparent) !important;
+}
+
+.downloadgraph_DownloadGraph_1BxZD .downloadgraph_GraphBarDownload_OS07N {
+  color: color-mix(in srgb, var(--kmg-accent) 50%, transparent) !important;
+}
+
+.downloadgraph_LegendRow_Ayu-- .downloadgraph_Network_33jqE svg {
+  color: color-mix(in srgb, var(--kmg-accent) 90%, transparent) !important;
+}
+
+.downloadgraph_DownloadGraphLegend_hGZq4 .downloadgraph_Network_33jqE svg {
+  color: color-mix(in srgb, var(--kmg-accent) 90%, transparent) !important;
+}
+
+.downloadgraph_LanPeer_1XPho:hover .downloadgraph_LanPeerHostName_1qxZA {
+  color: var(--kmg-accent) !important;
+}
+
+.downloadgraph_HeroAndLogo_3mZ2r.downloadgraph_Empty_pHDI1 {
+  background-image: linear-gradient(to right, rgb(0, 86, 214) 0%, var(--kmg-accent) 100%) !important;
+}
+
+.gamepadhomewhatsnew_EventType_1f0dZ {
+  color: var(--kmg-accent) !important;
+}
+
+.discoveryqueuewidget_LoginButton_24bCZ {
+  background-color: var(--kmg-accent) !important;
+}
+
+._3yc1HWeo3r0NEKZDWLfK95._3dgLyDGvg0Xifttzo46wAK {
+  background-color: var(--kmg-accent) !important;
+}
+
+._3jVF1K6rjo9QNtGDM4j_L_ {
+  color: var(--kmg-accent) !important;
+}
+
+._2zMiY-zMAyPJO_WshL9qoV {
+  color: var(--kmg-accent) !important;
+}
+
+._3GFvYifYf8qRn14X1Zyg77 {
+  color: var(--kmg-accent) !important;
+}
+
+._1HmENbYCKiAliTrvcRPgEa {
+  color: var(--kmg-accent) !important;
+}
+
+._12cAC29RrLapdVbXiJoquT button.DialogButton._1IuSGQRRzkH2FI6vPSeQjF, ._12cAC29RrLapdVbXiJoquT button.DialogButton._1IuSGQRRzkH2FI6vPSeQjF:active, ._12cAC29RrLapdVbXiJoquT button.DialogButton._1IuSGQRRzkH2FI6vPSeQjF:hover {
+  background-color: var(--kmg-accent) !important;
+}
+
+._153LMgo6I3oU1FBYfvXNOR button.DialogButton._21kxLhOa-E8amdNn4Q_zBY {
+  background-color: var(--kmg-accent) !important;
+}
+
+.decksetuphelp_SetupHelp_3E4bw a {
+  color: var(--kmg-accent) !important;
+}
+
+._45PIYCQMfo98EYVJLC-TL {
+  filter: contrast(10) invert(0.44) sepia(1) saturate(5) hue-rotate(175deg) drop-shadow(color-mix(in srgb, var(--kmg-accent) 56.5%, transparent) 0px 0px 2px) !important;
+}
+
+._1NE5gJdQ9-FE7lm7Kf5Ibw ._27seDQGbBwZZNlYocAFwdE {
+  stroke: var(--kmg-accent) !important;
+}
+
+.o4dc4YuFACmgE_eLORMo1 ._3Il1BD4p9lccpjISQKhR1X {
+  background-color: var(--kmg-accent) !important;
+}
+
+.mainmenuapprunning_NavigationMenuItem_1G0K4 ._3Il1BD4p9lccpjISQKhR1X {
+  background-color: var(--kmg-accent) !important;
+}
+
+button.DialogButton._1dEi5qzSDdPOzoOQXYbNLN._1Iw5xoXQXfmRjgjWTKbm_G {
+  outline-color: var(--kmg-accent) !important;
+}
+
+._3M3KN_jO-QdsB9OW-LjQ3h button._3djHJMevUMVySLrFHvmcY0 {
+  border-top-color: var(--kmg-accent) !important;
+  border-right-color: var(--kmg-accent) !important;
+  border-bottom-color: var(--kmg-accent) !important;
+  border-left-color: var(--kmg-accent) !important;
+}
+
+.xhCrB_Km7HXttO9PAnOY0.f00xYxwXsUvBUBYZ32tLW {
+  fill: var(--kmg-accent) !important;
+}
+
+._21ac_np60gc6YTOviCZM2m.f00xYxwXsUvBUBYZ32tLW {
+  stroke: var(--kmg-accent) !important;
+}
+
+._1t6-F5rcCbJ5XolR3l2wzk ._36zha9Yorh7BlEtYLZ1QQh {
+  color: var(--kmg-accent) !important;
+}
+
+.nF0puc2V3PWOYGVWEzQY7 ._1PX0zNN_4Xsfadhi8KxKQR polyline {
+  stroke: var(--kmg-accent) !important;
+}
+
+.installrequest_FolderOption_Oo5JP.installrequest_Active_gkgG- {
+  background-color: var(--kmg-accent) !important;
+}
+
+.DesktopUI .installrequest_FolderOption_Oo5JP.installrequest_Active_gkgG- {
+  background-color: var(--kmg-accent) !important;
+}
+
+.installdialog_InstallAppsBar_1hmVC {
+  background-color: var(--kmg-accent) !important;
+}
+
+.mandatoryupdate_MandatoryUpdateTakeoverContent_PZjfG .mandatoryupdate_ButtonContainer_3bwwE .mandatoryupdate_Button_2rhhN {
+  background-color: var(--kmg-accent) !important;
+}
+
+._2h6KD6p6y4vIgO2Toxx-_K .standardtemplates_Count_FyFTb, .standardtemplates_PinnedTemplate_2eBei .standardtemplates_Count_FyFTb {
+  background-color: var(--kmg-accent) !important;
+}
+
+.standardtemplates_AllNotificationsTemplate_2m9JU .standardtemplates_Count_FyFTb, .standardtemplates_StandardTemplateDesktop_1tsEf .standardtemplates_Count_FyFTb, .standardtemplates_DesktopToastTemplate_3CGHg .standardtemplates_Count_FyFTb, .standardtemplates_PinnedTemplateWeb_MmdBj .standardtemplates_Count_FyFTb, .standardtemplates_PinnedTemplateDesktop_2caCr .standardtemplates_Count_FyFTb {
+  background-color: var(--kmg-accent) !important;
+}
+
+.shorttemplates_StandardTemplate_WgSlJ .shorttemplates_Count_3tGYZ, ._3V6804k2yutEiF6IWg8axH .shorttemplates_Count_3tGYZ {
+  background-color: var(--kmg-accent) !important;
+}
+
+.shorttemplates_AllNotificationsTemplate_yn7qi .shorttemplates_Count_3tGYZ, .shorttemplates_StandardTemplateDesktop_3B-l9 .shorttemplates_Count_3tGYZ, .shorttemplates_DesktopToastTemplate_PhN5d .shorttemplates_Count_3tGYZ, .shorttemplates_PinnedTemplateWeb_2hqAw .shorttemplates_Count_3tGYZ, .shorttemplates_PinnedTemplateDesktop_3iJFa .shorttemplates_Count_3tGYZ {
+  background-color: var(--kmg-accent) !important;
+}
+
+.shorttemplates_ShortTemplate_29NLb .shorttemplates_Count_3tGYZ {
+  background-color: var(--kmg-accent) !important;
+}
+
+.steamtemplates_StandardTemplate_1zIGL .steamtemplates_Count_Ujqy5, ._4egmnB1wTrDll5Mc_eal8 .steamtemplates_Count_Ujqy5 {
+  background-color: var(--kmg-accent) !important;
+}
+
+.steamtemplates_AllNotificationsTemplate_3diaj .steamtemplates_Count_Ujqy5, .steamtemplates_StandardTemplateDesktop_4vJlU .steamtemplates_Count_Ujqy5, .steamtemplates_DesktopToastTemplate_NDrdY .steamtemplates_Count_Ujqy5, .steamtemplates_PinnedTemplateWeb_2HEFf .steamtemplates_Count_Ujqy5, .steamtemplates_PinnedTemplateDesktop_2lHUy .steamtemplates_Count_Ujqy5 {
+  background-color: var(--kmg-accent) !important;
+}
+
+.notificationcontent_StandardTemplate_5HZT7 .notificationcontent_Count_Mw9um, .notificationcontent_PinnedTemplate_1X-O1 .notificationcontent_Count_Mw9um {
+  background-color: var(--kmg-accent) !important;
+}
+
+.notificationcontent_AllNotificationsTemplate_3Ak7c .notificationcontent_Count_Mw9um, .notificationcontent_StandardTemplateDesktop_jD4XY .notificationcontent_Count_Mw9um, .notificationcontent_DesktopToastTemplate_vW8HM .notificationcontent_Count_Mw9um, .notificationcontent_PinnedTemplateWeb_3mo3Q .notificationcontent_Count_Mw9um, .notificationcontent_PinnedTemplateDesktop_1-8YO .notificationcontent_Count_Mw9um {
+  background-color: var(--kmg-accent) !important;
+}
+
+._3Ib1_b5EZHZUalBk63-Ltc {
+  fill: var(--kmg-accent) !important;
+}
+
+._2w9TpQwxU7vcwaAbf3KGv_ ._1uLVHdiiCg78BRnhqLxUID {
+  background-color: var(--kmg-accent) !important;
+}
+
+.virtualkeyboard_Keyboard_45rH7.DefaultTheme {
+  --key-extendedkey-background-color: var(--kmg-accent) !important;
+  --key-toggleon-background-color: var(--kmg-accent) !important;
+  --key-toggleoneshot-color: var(--kmg-accent) !important;
+  --key-pointer-background-color: var(--kmg-accent) !important;
+  --key-deadkeyactive-color: var(--kmg-accent) !important;
+}
+
+.virtualkeyboard_Keyboard_45rH7.DefaultTheme .virtualkeyboard_KeyboardKey_2KhPX.virtualkeyboard_Touched_3UFQq {
+  background-color: var(--kmg-accent) !important;
+}
+
+.virtualkeyboard_Keyboard_45rH7.Candy {
+  --key-deadkeyactive-color: var(--kmg-accent) !important;
+}
+
+.virtualkeyboard_Keyboard_45rH7.Candy .virtualkeyboard_KeyboardKeyDeadKeyActive_3wiFM {
+  color: var(--kmg-accent) !important;
+  box-shadow: color-mix(in srgb, var(--kmg-accent) 56%, transparent) 0px 0px 8px 0px inset !important;
+}
+
+.virtualkeyboard_Keyboard_45rH7.Evolve {
+  --key-extendedkey-background-color: var(--kmg-accent) !important;
+  --key-toggleon-background-color: var(--kmg-accent) !important;
+  --key-toggleoneshot-color: var(--kmg-accent) !important;
+}
+
+._19zHK8nTq8UXEJGUbHczuE.DefaultTheme {
+  --key-extendedkey-background-color: var(--kmg-accent) !important;
+  --key-toggleon-background-color: var(--kmg-accent) !important;
+  --key-toggleoneshot-color: var(--kmg-accent) !important;
+  --key-pointer-background-color: var(--kmg-accent) !important;
+  --key-deadkeyactive-color: var(--kmg-accent) !important;
+}
+
+._19zHK8nTq8UXEJGUbHczuE.DefaultTheme ._3YpL9Gmf8RDdBRfwyhGWtp._2kBKOyaF18bkd-Ur7Y-CGe {
+  background-color: var(--kmg-accent) !important;
+}
+
+._19zHK8nTq8UXEJGUbHczuE.Candy {
+  --key-deadkeyactive-color: var(--kmg-accent) !important;
+}
+
+._19zHK8nTq8UXEJGUbHczuE.Candy ._2X0mo7FJPZrJiuGf6atrf_ {
+  color: var(--kmg-accent) !important;
+  box-shadow: color-mix(in srgb, var(--kmg-accent) 56%, transparent) 0px 0px 8px 0px inset !important;
+}
+
+._19zHK8nTq8UXEJGUbHczuE.Evolve {
+  --key-extendedkey-background-color: var(--kmg-accent) !important;
+  --key-toggleon-background-color: var(--kmg-accent) !important;
+  --key-toggleoneshot-color: var(--kmg-accent) !important;
+}
+
+.header_HeaderDownloadContainer_2ssr3 .header_HeaderAppPortraitContainer_1PbL3 .header_HeaderDownloadProgressBarBackground_vo3Tt .AK_Ax_siTCH1_LT3APMlx {
+  background-color: var(--kmg-accent) !important;
+}
+
+.notificationssettings_NotificationSection_BRmrC button.DialogButton {
+  color: var(--kmg-accent) !important;
+}
+
+._1AbErMQt3j46sNGHR3IoCb {
+  --left-track-color: var(--kmg-accent) !important;
+}
+
+._16p6rV6HHIHu6Ns_LQszoo.QYGphGT9-VInW1bWZmy5y {
+  background-color: var(--kmg-accent) !important;
+}
+
+._2olop0hqqt-ps96FEsf_dm {
+  color: var(--kmg-accent) !important;
+}
+
+.steamdesktopoverlay_ToolbarContainer_3OzkV .steamdesktopoverlay_Toolbar_fbu3l .steamdesktopoverlay_ToolbarButton_3ZLaT.steamdesktopoverlay_Toggled_1BXjK {
+  background-color: var(--kmg-accent) !important;
+}
+
+.steamdesktopoverlay_OverlayBroadcast_261QW .steamdesktopoverlay_Title_8psoS {
+  color: var(--kmg-accent) !important;
+}
+
+._2Pb44QTSnDyc5GLNnVtegN ._2vsDU46uDOtqK3-Kv9HFyo ._1mk11sO1ogSUnfwd3ZeLPj {
+  color: var(--kmg-accent) !important;
+}
+
+._3wMS41OoTPnZyEddTVwzy_._3t_UEZDy1QxxcYfn3TTvD2 svg {
+  filter: drop-shadow(rgb(0, 0, 0) 0px 0px 2px) drop-shadow(var(--kmg-accent) 0px 0px 16px) drop-shadow(var(--kmg-accent) 10px 10px 16px) !important;
+}
+
+.updatealert_Alert_2iJsg {
+  background-color: var(--kmg-accent) !important;
+}
+
+._2_FomluqqgQ2Hx8ON3AVep .bottombar_StatusLine_1xCcF {
+  color: var(--kmg-accent) !important;
+}
+
+._2_FomluqqgQ2Hx8ON3AVep .bottombar_ProgressBar_wi0pD {
+  --color-progress-bar-foreground: var(--kmg-accent) !important;
+}
+
+.supernav_SuperNavMenu_7AlhC.supernav_Selected_1gqEj:not(.supernav_Disabled_2cO0H) .supernav_MenuButton_19axK {
+  color: var(--kmg-accent) !important;
+  text-shadow: var(--kmg-accent) 0px 0px 1px !important;
+}
+
+.supernav_SuperNavMenu_7AlhC.supernav_Selected_1gqEj:not(.supernav_Disabled_2cO0H) .supernav_MenuButton_19axK::after {
+  background-color: var(--kmg-accent) !important;
+}
+
+.serverbrowserdialog_ServerBrowserDialog_2rxrV .serverbrowserdialog_DialogBody_2SvsK ._2X_ZpO2X_CIOIEfml3ZTcX .serverbrowserdialog_SearchButton_2KYMM.serverbrowserdialog_SearchActive_B0KOf {
+  background-color: var(--kmg-accent) !important;
+}
+
+.serverbrowserdialog_ServerBrowserDialog_2rxrV .serverbrowserdialog_DialogBody_2SvsK ._2X_ZpO2X_CIOIEfml3ZTcX .serverbrowserdialog_SearchButton_2KYMM.serverbrowserdialog_SearchActive_B0KOf:hover {
+  background-color: var(--kmg-accent) !important;
+}
+
+.serverbrowserdialog_ServerBrowserDialog_2rxrV .serverbrowserdialog_DialogBody_2SvsK ._2X_ZpO2X_CIOIEfml3ZTcX .serverbrowserdialog_SearchButton_2KYMM.serverbrowserdialog_NewSearchButton_3pbT2 {
+  background-color: var(--kmg-accent) !important;
+}
+
+.serverbrowserdialog_ServerBrowserDialog_2rxrV .serverbrowserdialog_DialogBody_2SvsK .serverbrowserdialog_ServerTabPane_2YSm1 .serverbrowserdialog_BottomControlsRow_341md .serverbrowserdialog_ConnectButton_21aBX:not(.Disabled) {
+  background-color: var(--kmg-accent) !important;
+}
+
+.appportrait_LibraryItemBoxSubscript_1LJqx.appportrait_SteamReviewPositive_YMFWN {
+  background-color: var(--kmg-accent) !important;
+}
+
+.appportrait_LibraryItemBoxSubscript_1LJqx.appportrait_ClassAllAchieved_31wTt {
+  background-color: var(--kmg-accent) !important;
+}
+
+.appportrait_AppPortraitBanner_N8aJr {
+  background-color: var(--kmg-accent) !important;
+}
+
+.appportrait_AppPortraitBanner_N8aJr.appportrait_ComingSoonBanner_QTJZo {
+  color: var(--kmg-accent) !important;
+}
+
+.desktoptoasts_DesktopToastPopup_1OOQP.desktoptoasts_Top_2oeq2:hover .desktoptoasts_DesktopToastBackground_3RkGk {
+  color: var(--kmg-accent) !important;
+}
+
+.desktoptoasts_DesktopToastPopup_1OOQP.desktoptoasts_Middle_2Rof8:hover .desktoptoasts_DesktopToastBackground_3RkGk {
+  color: var(--kmg-accent) !important;
+}
+
+.desktoptoasts_DesktopToastPopup_1OOQP.desktoptoasts_Bottom_EPgHC:hover .desktoptoasts_DesktopToastBackground_3RkGk {
+  color: var(--kmg-accent) !important;
+}
+
+.desktopbrowser_URLBar_26Gmf ._1oXr_GpvIgjHasLyU3tBn.desktopbrowser_Toggled_WIb1F {
+  background-color: var(--kmg-accent) !important;
+}
+
+._10T2j3nynZSKnIKIRrTLr4 ._33DvvaAAsKaD30JrKzcL38 ._2xqwHms_kkW3jPhfsUTa8._2quMUWhcxOFUv7Y8RS2rQe {
+  background-color: var(--kmg-accent) !important;
+}
+
+.MPR_SYayr1J7ILS9VdsPK .JHB870EeQHaMq9eprCiJq {
+  color: var(--kmg-accent) !important;
+}
+
+._1BtnT_tFzksHUZ8-oC42K ._1bbRSvrRrGtt9Yq1nKA_Gd ._1IY5au-9IjfSDM30xuoWAf {
+  color: var(--kmg-accent) !important;
+}
+
+._1J8umaxlHnD4poewN6r8wp._2xLvfqjaRw9d1Ah8Tn7X52 {
+  border-top-color: var(--kmg-accent) !important;
+}
+
+.updaterfield_UpdaterFieldStatusApplying_Y36on .updaterfield_TextContainer_pW4WL .updaterfield_ApplyingText_PHNS8 {
+  color: var(--kmg-accent) !important;
+}
+
+.kiL0EDp5piScOUrY9PU11 ._15ngjutN0h75yg2ZaN-qkm {
+  color: var(--kmg-accent) !important;
+}

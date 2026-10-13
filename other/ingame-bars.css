@@ -1,0 +1,16 @@
+/* Top bar and footer follow the menus (same color and opacity) while a game is running */
+:root:has(.gamepadui_TransparentBackground_3vBmc) .header_HeaderOpaque_3x-XE,
+:root:has(.gamepadui_TransparentBackground_3vBmc) .header_OverrideHeaderBackground_MS2nB,
+:root:has(.gamepadui_TransparentBackground_3vBmc) .footer_BasicFooter_3T1iF.footer_Opaque_2PZqi {
+  background: var(--kmg-menu) !important;
+  backdrop-filter: none !important;
+}
+
+/*
+  Steam adds a second layer on the top bar (dark tint + CSS blur, which turns
+  black over a game); drop it so the top bar matches the footer.
+*/
+:root:has(.gamepadui_TransparentBackground_3vBmc) .header_Header_1E_SL::before {
+  background: transparent !important;
+  backdrop-filter: none !important;
+}

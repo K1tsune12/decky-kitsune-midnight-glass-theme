@@ -1,0 +1,44 @@
+/*
+  Chat window: the gray/blue elements become translucent dark shades.
+  Focused items use the same shade as the Quick Access selection.
+*/
+:root {
+  --kmg-chat-element: rgba(0, 0, 0, 0.3);
+}
+
+/* Header (friend name) */
+.multiChatDialog .chattabs_ChatTab_X2iyw {
+  box-shadow: none !important;
+}
+
+/* Focused items: friend name, buttons, messages */
+.multiChatDialog .gpfocus:not(.ChatHistorySelector) {
+  background: var(--kmg-qam-select, rgba(0, 0, 0, 0.45)) !important;
+}
+
+/* Message history while focused */
+.multiChatDialog .ChatHistorySelector {
+  background: radial-gradient(120% 160% at 40% 50%, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 75%) !important;
+}
+
+/* Date separators */
+.multiChatDialog .msg.timeDivision {
+  background: var(--kmg-chat-element) !important;
+}
+
+/* Voice chat / invite buttons on the side */
+.multiChatDialog .oneOnOneVoiceChatButton:not(.gpfocus),
+.multiChatDialog .inviteAnotherFriendButton:not(.gpfocus) {
+  background: var(--kmg-chat-element) !important;
+}
+
+/* Message input */
+.multiChatDialog .chatentry_chatEntryControls_2gP0D {
+  background: var(--kmg-chat-element) !important;
+  box-shadow: none !important;
+}
+
+/* "Typing..." fade above the input */
+.multiChatDialog .FriendChatTypingNotification {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%) !important;
+}

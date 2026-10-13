@@ -1,0 +1,14 @@
+/*
+  While a game is running, Steam dims the screen behind its menus with a
+  blurred glass layer. CSS blur has nothing to blur over a game, so that layer
+  only stacks darkness and makes the menus look solid black. Replace it with a
+  plain, adjustable dim (blur behind menus can come from gamescope instead,
+  see the Midnight Glass Overlay plugin).
+*/
+:root {
+  --kmg-ingame-dim: 0;
+}
+:root:has(.gamepadui_TransparentBackground_3vBmc) .backgroundglass_BackgroundGlass_3rsrz {
+  background: rgba(0, 0, 0, var(--kmg-ingame-dim)) !important;
+  backdrop-filter: none !important;
+}
