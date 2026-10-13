@@ -7,6 +7,9 @@ separate gameview themes.
 
 ![Game page](images/gameview.png)
 
+![Quick Access over a running game](images/quick-access-ingame.png)
+*Quick Access over a running game, with the purple accent and the game blurred behind it by the Midnight Glass Overlay plugin.*
+
 ## Features
 
 - **Black UI, still glassy**: menus, Quick Access, Steam menu, context menus,
