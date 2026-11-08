@@ -26,3 +26,8 @@
 .mainmenu_Menu_23IDi:not([class*="_3I23qeyanGpts"]):not([class*="_1ABsh9UL8DKM0"]) [class*="_1BbM8Qq8OL5N8"] {
   width: calc(240px + var(--kmg-mm-extra)) !important;
 }
+
+/* item label: Steam caps it at 160px and scrolls longer names */
+.mainmenu_Menu_23IDi:not([class*="_3I23qeyanGpts"]):not([class*="_1ABsh9UL8DKM0"]) [class*="_3x-ZK1MiNB1Uvo"] {
+  max-width: calc(160px + var(--kmg-mm-extra)) !important;
+}
