@@ -1786,6 +1786,15 @@
             "SP"
           ]
         },
+        "Soft Dark": {
+          "--kmg-pdb-bg": [
+            "rgba(0, 0, 0, 0.35)",
+            "SP"
+          ],
+          "protondb/icon-background.css": [
+            "SP"
+          ]
+        },
         "Main Color": {
           "--kmg-pdb-bg": [
             "var(--kmg-main, #000)",
