@@ -1541,31 +1541,6 @@
         },
         "No": {}
       }
-    },
-    "Quick Access Width": {
-      "type": "dropdown",
-      "default": "Default",
-      "values": {
-        "Default": {},
-        "Wide": {
-          "--kmg-qam-width": [
-            "400px",
-            "QuickAccess"
-          ],
-          "other/qam-width.css": [
-            "QuickAccess"
-          ]
-        },
-        "Extra Wide": {
-          "--kmg-qam-width": [
-            "520px",
-            "QuickAccess"
-          ],
-          "other/qam-width.css": [
-            "QuickAccess"
-          ]
-        }
-      }
     }
   }
 }
