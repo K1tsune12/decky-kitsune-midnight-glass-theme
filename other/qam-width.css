@@ -1,0 +1,6 @@
+/* A wider Quick Access menu: Steam keeps its tabs to a 300px column. On a TV
+   the menu window has room to spare; the value comes from the theme option. */
+.quickaccessmenu_TabGroupPanel_1QO7b {
+  max-width: var(--kmg-qam-width) !important;
+  width: var(--kmg-qam-width) !important;
+}

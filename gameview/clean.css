@@ -1,10 +1,39 @@
 /* Clean Gameview layout (based on Clean Gameview by SuchMeme) */
 :root {
   --kmg-footer-height: 40px;
-  --kmg-play-anim-height: 58vw;
+  --kmg-play-anim-height: min(58vw, calc(100vh - var(--kmg-footer-height)));
   --kmg-play-bar-height: 80px;
-  --kmg-top-panel-height: calc(100vh - var(--kmg-play-bar-height) - var(--kmg-footer-height));
+  /* bars between the hero and the Play bar (HowLongToBeat's), counted below */
+  --kmg-extra-bars: 0px;
+  /* how much of the screen the hero may take: all of it on the Deck */
+  --kmg-hero-cap: 100vh;
+  --kmg-top-panel-height: min(
+    calc(100vh - var(--kmg-play-bar-height) - var(--kmg-footer-height) - var(--kmg-extra-bars)),
+    var(--kmg-hero-cap)
+  );
   --kmg-image-height: calc(100vh - var(--kmg-footer-height));
+}
+
+/* HowLongToBeat's default style puts its bar between the hero and the Play bar,
+   which pushed the Play button under the footer. Its "clean" styles float over
+   the hero instead and take no room. */
+:root:has(#hltb-for-deck .hltb-info:not([class*="clean"])) {
+  --kmg-extra-bars: 56px;
+}
+
+/* Wide screens (a TV, 16:9): the hero filled the whole screen and the Play bar
+   sat at its very bottom; keep the hero to most of it and the rest in view. */
+@media (min-aspect-ratio: 17/10) {
+  :root {
+    --kmg-hero-cap: 72vh;
+  }
+}
+
+/* The footer stays fixed over the game page: give it the glass look so what
+   scrolls under it reads as passing behind a bar. */
+:root:has(.sharedappdetailsheader_TopCapsule_2meE3) .footer_BasicFooter_3T1iF {
+  background: rgba(14, 20, 27, 0.55) !important;
+  backdrop-filter: blur(12px);
 }
 
 .BasicUI .sharedappdetailsheader_TopCapsule_2meE3 {
