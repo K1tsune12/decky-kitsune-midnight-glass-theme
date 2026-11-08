@@ -21,14 +21,6 @@
   --kmg-extra-bars: 56px;
 }
 
-/* Wide screens (a TV, 16:9): the hero filled the whole screen and the Play bar
-   sat at its very bottom; keep the hero to most of it and the rest in view. */
-@media (min-aspect-ratio: 17/10) {
-  :root {
-    --kmg-hero-cap: 72vh;
-  }
-}
-
 /* The footer stays fixed over the game page: give it the glass look so what
    scrolls under it reads as passing behind a bar. */
 :root:has(.sharedappdetailsheader_TopCapsule_2meE3) .footer_BasicFooter_3T1iF {

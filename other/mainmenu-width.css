@@ -1,0 +1,28 @@
+/*
+  Wider main menu (theme option). Steam reserves a 240px slot on the left and
+  draws the menu 240px wide, sliding it in from -240px. Everything grows by
+  --kmg-mm-extra; the collapsed (icon) and VR menus keep their own sizes.
+
+  CSS Loader maps mainmenu_Collapsed and mainmenu_ItemOuter (even their raw
+  names) to other classes, so those and Open are matched by a fragment of this
+  Steam build's class names, which it leaves alone. If Steam renames them,
+  these rules stop matching and the menu falls back to Steam's 240px.
+*/
+.mainmenu_ViewPlaceholder_1PGlK:not(.mainmenu_Fullscreen_26eRZ) {
+  width: calc(240px + var(--kmg-mm-extra)) !important;
+}
+
+/* Menu, not Collapsed, not VR */
+.mainmenu_Menu_23IDi:not([class*="_3I23qeyanGpts"]):not([class*="_1ABsh9UL8DKM0"]) {
+  width: calc(240px + var(--kmg-mm-extra)) !important;
+}
+
+/* closed: hidden off the left edge by its full width; open keeps Steam's 0 */
+.mainmenu_Menu_23IDi:not([class*="_3apLK4XGwOja"]):not([class*="_3I23qeyanGpts"]):not([class*="_1ABsh9UL8DKM0"]) {
+  transform: translateX(calc(-240px - var(--kmg-mm-extra)));
+}
+
+/* ItemOuter */
+.mainmenu_Menu_23IDi:not([class*="_3I23qeyanGpts"]):not([class*="_1ABsh9UL8DKM0"]) [class*="_1BbM8Qq8OL5N8"] {
+  width: calc(240px + var(--kmg-mm-extra)) !important;
+}

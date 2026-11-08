@@ -1541,6 +1541,108 @@
         },
         "No": {}
       }
+    },
+    "Quick Access Width": {
+      "type": "slider",
+      "default": "Default",
+      "values": {
+        "Default": {},
+        "+100 px": {
+          "--kmg-qam-extra": [
+            "100px",
+            "SP",
+            "QuickAccess"
+          ],
+          "other/qam-width.css": [
+            "SP",
+            "QuickAccess"
+          ]
+        },
+        "+200 px": {
+          "--kmg-qam-extra": [
+            "200px",
+            "SP",
+            "QuickAccess"
+          ],
+          "other/qam-width.css": [
+            "SP",
+            "QuickAccess"
+          ]
+        },
+        "+300 px": {
+          "--kmg-qam-extra": [
+            "300px",
+            "SP",
+            "QuickAccess"
+          ],
+          "other/qam-width.css": [
+            "SP",
+            "QuickAccess"
+          ]
+        },
+        "+400 px": {
+          "--kmg-qam-extra": [
+            "400px",
+            "SP",
+            "QuickAccess"
+          ],
+          "other/qam-width.css": [
+            "SP",
+            "QuickAccess"
+          ]
+        }
+      }
+    },
+    "Main Menu Width": {
+      "type": "slider",
+      "default": "Default",
+      "values": {
+        "Default": {},
+        "+60 px": {
+          "--kmg-mm-extra": [
+            "60px",
+            "SP",
+            "MainMenu"
+          ],
+          "other/mainmenu-width.css": [
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "+120 px": {
+          "--kmg-mm-extra": [
+            "120px",
+            "SP",
+            "MainMenu"
+          ],
+          "other/mainmenu-width.css": [
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "+180 px": {
+          "--kmg-mm-extra": [
+            "180px",
+            "SP",
+            "MainMenu"
+          ],
+          "other/mainmenu-width.css": [
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "+240 px": {
+          "--kmg-mm-extra": [
+            "240px",
+            "SP",
+            "MainMenu"
+          ],
+          "other/mainmenu-width.css": [
+            "SP",
+            "MainMenu"
+          ]
+        }
+      }
     }
   }
 }

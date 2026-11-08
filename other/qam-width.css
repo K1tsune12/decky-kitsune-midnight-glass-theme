@@ -1,0 +1,49 @@
+/*
+  Wider Quick Access menu (theme option). Steam reserves an 854px slot for the
+  menu and slides it 506px off screen, which leaves 348px in view (all 854px
+  when the friends chat expands it). Widening the slot by --kmg-qam-extra moves
+  the menu left by that much; the parts inside that Steam sizes in pixels grow
+  by the same amount, so the chat keeps its proportions.
+*/
+.quickaccessmenu_ViewPlaceholder_2orc8 {
+  width: calc(854px + var(--kmg-qam-extra)) !important;
+}
+
+/* the tab column (300px), only while the chat is not expanded */
+:root:not(:has(.QAMFriendExpanded)) .quickaccessmenu_ViewPlaceholder_2orc8:not(._2zh9IsDz_Expanded) .quickaccessmenu_TabGroupPanel_1QO7b,
+:root:not(:has(.QAMFriendExpanded)) .quickaccessmenu_TabGroupPanel_1QO7b {
+  max-width: calc(300px + var(--kmg-qam-extra)) !important;
+  width: calc(300px + var(--kmg-qam-extra)) !important;
+}
+
+/* header and footer bars: 348px, or 854px with the chat expanded */
+.quickaccessmenu_HeaderContainer_3k5MH {
+  max-width: calc(348px + var(--kmg-qam-extra)) !important;
+}
+._2zh9IsDz_Expanded .quickaccessmenu_HeaderContainer_3k5MH,
+.QAMFriendExpanded .quickaccessmenu_HeaderContainer_3k5MH {
+  max-width: calc(854px + var(--kmg-qam-extra)) !important;
+}
+._1pXuHJtgXQuvdofxG00pKR {
+  width: calc(348px + var(--kmg-qam-extra)) !important;
+}
+._2zh9IsDz_Expanded ._1pXuHJtgXQuvdofxG00pKR,
+.QAMFriendExpanded ._1pXuHJtgXQuvdofxG00pKR {
+  width: calc(854px + var(--kmg-qam-extra)) !important;
+}
+
+/* expanded chat: the panel and the friends list grow with the menu */
+._2zh9IsDz_Expanded .quickaccessmenu_PanelOuterNav_2BB6u,
+.QAMFriendExpanded .quickaccessmenu_PanelOuterNav_2BB6u {
+  max-width: calc(806px + var(--kmg-qam-extra)) !important;
+}
+.QAMFriendExpanded ._zwJA6Drf_FriendListContainerPanel {
+  min-width: calc(240px + var(--kmg-qam-extra) / 2) !important;
+}
+
+/* the menu's outer box is a fixed 854px; without this the expanded chat stops
+   there and leaves the extra width empty. Matched by a fragment of this Steam
+   build's class name, which CSS Loader leaves alone. */
+[class*="_3DHXr5yONRuN"] {
+  width: calc(854px + var(--kmg-qam-extra)) !important;
+}
