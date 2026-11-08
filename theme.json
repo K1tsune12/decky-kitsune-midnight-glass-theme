@@ -1,7 +1,7 @@
 {
   "name": "Kitsune Midnight Glass",
   "author": "K1tsune12",
-  "version": "v1.1",
+  "version": "v1.2",
   "manifest_version": 9,
   "description": "Black glass UI inspired by Obsidian that keeps Steam's blur and transparency, with Clean Gameview, zoom & blur hero options and a darker game page.",
   "inject": {
