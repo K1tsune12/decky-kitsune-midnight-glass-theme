@@ -1,0 +1,4 @@
+/* ProtonDB Badges status icon on library covers: hidden */
+.protondb-grid-dot {
+  display: none !important;
+}

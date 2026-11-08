@@ -14,3 +14,11 @@
   background: transparent !important;
   backdrop-filter: none !important;
 }
+
+/*
+  Quick Access window: Steam paints its footer solid black. The menu panel
+  behind it already has the menu color and opacity, so let it show through.
+*/
+:root:has(.quickaccessmenu_TabGroupPanel_1QO7b) .footer_BasicFooter_3T1iF {
+  background: transparent !important;
+}

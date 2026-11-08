@@ -4,8 +4,8 @@
   solid grays hide the game. Blur comes from gamescope (Midnight Glass Overlay).
 */
 :root {
-  --kmg-focus-to: rgba(0, 0, 0, var(--kmg-select-alpha, 0.45));
-  --kmg-focus-from: rgba(0, 0, 0, calc(var(--kmg-select-alpha, 0.45) + 0.15));
+  --kmg-focus-to: color-mix(in srgb, var(--kmg-select-color, #000) calc(var(--kmg-select-alpha, 0.45) * 100%), transparent);
+  --kmg-focus-from: color-mix(in srgb, var(--kmg-select-color, #000) calc((var(--kmg-select-alpha, 0.45) + 0.15) * 100%), transparent);
 }
 
 /* CSS blur turns black over a game */

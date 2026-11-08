@@ -1,0 +1,8 @@
+/*
+  Decky plugin list: Decky puts the icon on the left and the name on the
+  right edge. Keep the name next to the icon instead.
+*/
+button.DialogButton > div[style*="justify-content: space-between"]:has(> svg:first-child + div:last-child) {
+  justify-content: flex-start !important;
+  gap: 16px;
+}

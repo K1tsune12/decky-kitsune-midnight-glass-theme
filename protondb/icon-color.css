@@ -1,0 +1,7 @@
+/* ProtonDB Badges status icon on library covers: icon color instead of the tier color */
+.protondb-grid-dot svg [fill]:not([fill="none"]) {
+  fill: var(--kmg-pdb-color) !important;
+}
+.protondb-grid-dot svg [stroke] {
+  stroke: var(--kmg-pdb-color) !important;
+}

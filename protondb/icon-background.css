@@ -1,0 +1,4 @@
+/* ProtonDB Badges status icon on library covers: background color */
+.protondb-grid-dot {
+  background: var(--kmg-pdb-bg) !important;
+}

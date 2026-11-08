@@ -612,6 +612,37 @@
         }
       }
     },
+    "Selection Color": {
+      "type": "dropdown",
+      "default": "Black",
+      "values": {
+        "Black": {},
+        "Gray": {
+          "--kmg-select-color": [
+            "#8b929a",
+            "MainMenu",
+            "QuickAccess",
+            "SP"
+          ]
+        },
+        "White": {
+          "--kmg-select-color": [
+            "#ffffff",
+            "MainMenu",
+            "QuickAccess",
+            "SP"
+          ]
+        },
+        "Accent Color": {
+          "--kmg-select-color": [
+            "var(--kmg-accent, #1a9fff)",
+            "MainMenu",
+            "QuickAccess",
+            "SP"
+          ]
+        }
+      }
+    },
     "Notification Opacity": {
       "type": "slider",
       "default": "60%",
@@ -764,7 +795,8 @@
       "values": {
         "Yes": {
           "other/ingame-bars.css": [
-            "SP"
+            "SP",
+            "QuickAccess"
           ]
         },
         "No": {}
@@ -1640,6 +1672,191 @@
           "other/mainmenu-width.css": [
             "SP",
             "MainMenu"
+          ]
+        }
+      }
+    },
+    "ProtonDB Icon Position": {
+      "type": "dropdown",
+      "default": "Plugin",
+      "values": {
+        "Plugin": {},
+        "Top Left": {
+          "--kmg-pdb-top": [
+            "4px",
+            "SP"
+          ],
+          "--kmg-pdb-bottom": [
+            "auto",
+            "SP"
+          ],
+          "--kmg-pdb-left": [
+            "4px",
+            "SP"
+          ],
+          "--kmg-pdb-right": [
+            "auto",
+            "SP"
+          ],
+          "protondb/icon-position.css": [
+            "SP"
+          ]
+        },
+        "Top Right": {
+          "--kmg-pdb-top": [
+            "4px",
+            "SP"
+          ],
+          "--kmg-pdb-bottom": [
+            "auto",
+            "SP"
+          ],
+          "--kmg-pdb-left": [
+            "auto",
+            "SP"
+          ],
+          "--kmg-pdb-right": [
+            "4px",
+            "SP"
+          ],
+          "protondb/icon-position.css": [
+            "SP"
+          ]
+        },
+        "Bottom Left": {
+          "--kmg-pdb-top": [
+            "auto",
+            "SP"
+          ],
+          "--kmg-pdb-bottom": [
+            "4px",
+            "SP"
+          ],
+          "--kmg-pdb-left": [
+            "4px",
+            "SP"
+          ],
+          "--kmg-pdb-right": [
+            "auto",
+            "SP"
+          ],
+          "protondb/icon-position.css": [
+            "SP"
+          ]
+        },
+        "Bottom Right": {
+          "--kmg-pdb-top": [
+            "auto",
+            "SP"
+          ],
+          "--kmg-pdb-bottom": [
+            "4px",
+            "SP"
+          ],
+          "--kmg-pdb-left": [
+            "auto",
+            "SP"
+          ],
+          "--kmg-pdb-right": [
+            "4px",
+            "SP"
+          ],
+          "protondb/icon-position.css": [
+            "SP"
+          ]
+        },
+        "Hidden": {
+          "protondb/icon-hidden.css": [
+            "SP"
+          ]
+        }
+      }
+    },
+    "ProtonDB Icon Background": {
+      "type": "dropdown",
+      "default": "Plugin",
+      "values": {
+        "Plugin": {},
+        "Transparent": {
+          "--kmg-pdb-bg": [
+            "transparent",
+            "SP"
+          ],
+          "protondb/icon-background.css": [
+            "SP"
+          ]
+        },
+        "Main Color": {
+          "--kmg-pdb-bg": [
+            "var(--kmg-main, #000)",
+            "SP"
+          ],
+          "protondb/icon-background.css": [
+            "SP"
+          ]
+        },
+        "Accent Color": {
+          "--kmg-pdb-bg": [
+            "var(--kmg-accent, #1a9fff)",
+            "SP"
+          ],
+          "protondb/icon-background.css": [
+            "SP"
+          ]
+        },
+        "White": {
+          "--kmg-pdb-bg": [
+            "rgba(255, 255, 255, 0.85)",
+            "SP"
+          ],
+          "protondb/icon-background.css": [
+            "SP"
+          ]
+        }
+      }
+    },
+    "ProtonDB Icon Color": {
+      "type": "dropdown",
+      "default": "Status",
+      "values": {
+        "Status": {},
+        "White": {
+          "--kmg-pdb-color": [
+            "#fff",
+            "SP"
+          ],
+          "protondb/icon-color.css": [
+            "SP"
+          ]
+        },
+        "Black": {
+          "--kmg-pdb-color": [
+            "#000",
+            "SP"
+          ],
+          "protondb/icon-color.css": [
+            "SP"
+          ]
+        },
+        "Accent Color": {
+          "--kmg-pdb-color": [
+            "var(--kmg-accent, #1a9fff)",
+            "SP"
+          ],
+          "protondb/icon-color.css": [
+            "SP"
+          ]
+        }
+      }
+    },
+    "Decky Plugin Names": {
+      "type": "dropdown",
+      "default": "Right",
+      "values": {
+        "Right": {},
+        "Left": {
+          "decky/names-left.css": [
+            "QuickAccess"
           ]
         }
       }

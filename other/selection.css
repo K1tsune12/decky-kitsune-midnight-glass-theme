@@ -1,11 +1,11 @@
 /*
   Selection: the focused item in the Steam menu, the in-game menu, Quick Access
   (tabs, notifications, friends) and achievements becomes a translucent darker
-  shade instead of gray.
+  shade instead of gray. Its color comes from Selection Color (black by default).
 */
 :root {
   --kmg-select-alpha: 0.45;
-  --kmg-qam-select: rgba(0, 0, 0, var(--kmg-select-alpha));
+  --kmg-qam-select: color-mix(in srgb, var(--kmg-select-color, #000) calc(var(--kmg-select-alpha) * 100%), transparent);
 }
 
 /* Steam menu */

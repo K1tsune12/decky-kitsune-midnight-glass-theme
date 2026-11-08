@@ -1,0 +1,10 @@
+/*
+  ProtonDB Badges status icon on library covers: move it to another corner.
+  The plugin sets its place inline, so these override it.
+*/
+.protondb-grid-dot {
+  top: var(--kmg-pdb-top) !important;
+  bottom: var(--kmg-pdb-bottom) !important;
+  left: var(--kmg-pdb-left) !important;
+  right: var(--kmg-pdb-right) !important;
+}
