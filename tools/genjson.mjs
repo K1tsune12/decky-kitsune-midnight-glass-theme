@@ -14,6 +14,27 @@ const mainColor = Object.fromEntries(Object.entries(colors).map(([k, c]) => [k, 
 mainColor.Custom = {};
 
 const MENU_TABS = ['MainMenu', 'QuickAccess', 'SP'];
+const SP_MENUS = ['SP', 'MainMenu', 'QuickAccess'];
+
+// Notification background presets (with Notification Opacity)
+const toastColors = {
+  'Black': '#000000', 'Charcoal': '#141414', 'Gray': '#2b2b2b', 'Midnight Blue': '#0b1630', 'Purple': '#2a0845',
+};
+
+// Extra width for the Quick Access and Steam menus: label -> px
+const widthSteps = (steps, varName, tab, file) => ({
+  'Default': {},
+  ...Object.fromEntries(steps.map((px) => [`+${px} px`, { ...v(varName, `${px}px`, ['SP', tab]), [file]: ['SP', tab] }])),
+});
+
+// ProtonDB Badges library icon corner: top, bottom, left, right
+const pdbCorner = (top, bottom, left, right) => ({
+  ...v('--kmg-pdb-top', top, SP), ...v('--kmg-pdb-bottom', bottom, SP),
+  ...v('--kmg-pdb-left', left, SP), ...v('--kmg-pdb-right', right, SP),
+  'protondb/icon-position.css': SP,
+});
+const pdbBg = (value) => ({ ...v('--kmg-pdb-bg', value, SP), 'protondb/icon-background.css': SP });
+const pdbColor = (value) => ({ ...v('--kmg-pdb-color', value, SP), 'protondb/icon-color.css': SP });
 
 // Accent presets (replace Steam's blue #1a9fff)
 const accents = {
@@ -32,7 +53,7 @@ const gvDark = Object.fromEntries(Object.entries(darkness).map(([k, a]) =>
 const theme = {
   name: 'Kitsune Midnight Glass',
   author: 'K1tsune12',
-  version: 'v1.1',
+  version: 'v1.3',
   manifest_version: 9,
   description: 'Black glass UI inspired by Obsidian that keeps Steam\'s blur and transparency, with Clean Gameview, zoom & blur hero options and a darker game page.',
   inject: {
@@ -42,6 +63,7 @@ const theme = {
     'gameview/logo.css': SP,
     'notifications/toast.css': TOAST,
     'other/chat.css': ['SP', 'QuickAccess'],
+    'other/new-design.css': SP_MENUS,
   },
   patches: {
     'Main Color': {
@@ -78,9 +100,27 @@ const theme = {
           [`${p}%`, { 'other/selection.css': MENU_TABS, ...v('--kmg-select-alpha', String(p / 100), MENU_TABS) }])),
       },
     },
+    'Selection Color': {
+      type: 'dropdown', default: 'Black',
+      values: {
+        'Black': {},
+        'Gray': v('--kmg-select-color', '#8b929a', MENU_TABS),
+        'White': v('--kmg-select-color', '#ffffff', MENU_TABS),
+        'Accent Color': v('--kmg-select-color', 'var(--kmg-accent, #1a9fff)', MENU_TABS),
+      },
+    },
     'Notification Opacity': {
       type: 'slider', default: '60%',
       values: pct([20, 30, 40, 50, 60, 70, 80, 90, 100], '--kmg-toast-alpha', TOAST),
+    },
+    'Notification Color': {
+      type: 'dropdown', default: 'Main Color',
+      values: {
+        'Main Color': {},
+        ...Object.fromEntries(Object.entries(toastColors).map(([k, c]) => [k, v('--kmg-toast-base', c, TOAST)])),
+        'Custom': {},
+      },
+      components: [{ name: 'Custom Notification Color', type: 'color-picker', on: 'Custom', default: '#000000', css_variable: '--kmg-toast-base', tabs: TOAST }],
     },
     'Overlay Glass': {
       type: 'checkbox', default: 'Yes',
@@ -101,7 +141,7 @@ const theme = {
     },
     'In-Game Bars Follow Menus': {
       type: 'checkbox', default: 'Yes',
-      values: { 'Yes': { 'other/ingame-bars.css': SP }, 'No': {} },
+      values: { 'Yes': { 'other/ingame-bars.css': ['SP', 'QuickAccess'] }, 'No': {} },
     },
     'Text Shadow': (() => {
       const MENUS = ['MainMenu', 'QuickAccess', 'notificationtoasts.*'];
@@ -122,6 +162,14 @@ const theme = {
       };
     })(),
     'Gameview Darkness': { type: 'slider', default: '60%', values: gvDark },
+    'Home Background Zoom': {
+      type: 'dropdown', default: 'Steady',
+      values: {
+        'Steam': {},
+        'Steady': { 'gameview/home-zoom-steady.css': SP },
+        'Off': { 'gameview/home-zoom-off.css': SP },
+      },
+    },
     'Online Badge Opacity': {
       type: 'slider', default: '40%',
       values: Object.fromEntries([0, 20, 40, 60, 80, 100].map(p =>
@@ -192,7 +240,7 @@ const theme = {
       type: 'checkbox', default: 'No',
       values: {
         'Yes': { ...v('--kmg-footer-height', '0px', SP), ...v('--kmg-play-anim-height', '100vh', SP) },
-        'No': { ...v('--kmg-footer-height', '40px', SP), ...v('--kmg-play-anim-height', '58vw', SP) },
+        'No': { ...v('--kmg-footer-height', '40px', SP), ...v('--kmg-play-anim-height', 'min(58vw, calc(100vh - 40px))', SP) },
       },
     },
     'Lock Logo': {
@@ -223,6 +271,53 @@ const theme = {
     'Disable Glow': {
       type: 'checkbox', default: 'No',
       values: { 'Yes': { 'other/no-glow.css': ALL }, 'No': {} },
+    },
+    'Quick Access Width': {
+      type: 'slider', default: 'Default',
+      values: widthSteps([100, 200, 300, 400], '--kmg-qam-extra', 'QuickAccess', 'other/qam-width.css'),
+    },
+    'Main Menu Width': {
+      type: 'slider', default: 'Default',
+      values: widthSteps([60, 120, 180, 240], '--kmg-mm-extra', 'MainMenu', 'other/mainmenu-width.css'),
+    },
+    'ProtonDB Icon Position': {
+      type: 'dropdown', default: 'Plugin',
+      values: {
+        'Plugin': {},
+        'Top Left': pdbCorner('4px', 'auto', '4px', 'auto'),
+        'Top Right': pdbCorner('4px', 'auto', 'auto', '4px'),
+        'Bottom Left': pdbCorner('auto', '4px', '4px', 'auto'),
+        'Bottom Right': pdbCorner('auto', '4px', 'auto', '4px'),
+        'Hidden': { 'protondb/icon-hidden.css': SP },
+      },
+    },
+    'ProtonDB Icon Background': {
+      type: 'dropdown', default: 'Plugin',
+      values: {
+        'Plugin': {},
+        'Transparent': pdbBg('transparent'),
+        'Soft Dark': pdbBg('rgba(0, 0, 0, 0.35)'),
+        'Main Color': pdbBg('var(--kmg-main, #000)'),
+        'Accent Color': pdbBg('var(--kmg-accent, #1a9fff)'),
+        'White': pdbBg('rgba(255, 255, 255, 0.85)'),
+      },
+    },
+    'ProtonDB Icon Color': {
+      type: 'dropdown', default: 'Status',
+      values: {
+        'Status': {},
+        'White': pdbColor('#fff'),
+        'Black': pdbColor('#000'),
+        'Accent Color': pdbColor('var(--kmg-accent, #1a9fff)'),
+      },
+    },
+    'Hide ProtonDB Analysis Button': {
+      type: 'checkbox', default: 'Yes',
+      values: { 'Yes': { 'protondb/analysis-hidden.css': SP }, 'No': {} },
+    },
+    'Decky Plugin Names': {
+      type: 'dropdown', default: 'Right',
+      values: { 'Right': {}, 'Left': { 'decky/names-left.css': ['QuickAccess'] } },
     },
   },
 };

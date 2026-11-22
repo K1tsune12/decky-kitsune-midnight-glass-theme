@@ -24,16 +24,6 @@ HOME PAGE
 .gamepadhome_TabbedContent_cE1Sa {
   background: var(--kmg-main);
 }
-.gamepadhomerecentgames_RecentGamesBackgroundFadeGradient_1ksIq {
-  background: -webkit-gradient(
-      linear,
-      left 80%,
-      left 90%,
-      from(rgba(0, 0, 0, 0)),
-      to(var(--kmg-main))
-    ),
-    -webkit-gradient(linear, 0% 0%, 100% 0%, color-stop(1%, var(--kmg-main)), color-stop(5%, rgba(0, 0, 0, 0)), color-stop(95%, rgba(0, 0, 0, 0)), color-stop(99%, var(--kmg-main)));
-}
 
 /*
 LIBRARY
@@ -86,9 +76,6 @@ STEAM INPUT
 /*
 FRIENDS & CHAT
 */
-.SteamDeckChats.gpfocuswithin .chattabs_ChatTab_1WfqA {
-  box-shadow: none;
-}
 .GamepadMode.friendlist.gpfocuswithin .FriendsListSteamDeckTopSection {
   background: var(--kmg-menu);
 }
@@ -103,9 +90,6 @@ FRIENDS & CHAT
 .GamepadMode .multiChatDialog.gpfocuswithin {
   background-color: var(--kmg-chat);
   background: var(--kmg-chat);
-}
-.friendinvites_InvitesList_3i8Fo {
-  background-color: var(--kmg-main);
 }
 
 /*
@@ -136,9 +120,6 @@ SETTINGS
 .BasicUI .librarysettings_LibrarySettings_2nsOY,
 .BasicUI .contentmanagement_ContentManagement_3wk64 {
   background: var(--kmg-main);
-}
-.settings-container {
-  background-color: var(--kmg-main) !important;
 }
 
 /*
@@ -224,10 +205,6 @@ Don't set !important here, it breaks the button highlight color.
 /*
 NOTIFICATIONS
 */
-.notificationcontent_ShortTemplate_2w-Eq,
-.notificationcontent_PinnedTemplate_H_NPi,
-.notificationcontent_StandardTemplate_1B_uv,
-.notificationcontent_ShortTemplate_nwer8,
 .notificationcontent_StandardTemplate_5HZT7,
 .notificationcontent_PinnedTemplateDesktop_1-8YO,
 .notificationcontent_PinnedTemplate_1X-O1,
@@ -242,7 +219,6 @@ OTHER
   background: var(--kmg-main);
 }
 .loadingthrobber_Container_3sa1N,
-.loadingthrobber_Container_3sa1N.loadingthrobber_PreloadThrobber_1-epa,
 .spinnyboi {
   background: var(--kmg-main) !important;
 }
