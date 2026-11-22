@@ -163,10 +163,9 @@ const theme = {
     })(),
     'Gameview Darkness': { type: 'slider', default: '60%', values: gvDark },
     'Home Background Zoom': {
-      type: 'dropdown', default: 'Steady',
+      type: 'dropdown', default: 'Steam',
       values: {
         'Steam': {},
-        'Steady': { 'gameview/home-zoom-steady.css': SP },
         'Off': { 'gameview/home-zoom-off.css': SP },
       },
     },

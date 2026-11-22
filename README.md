@@ -71,7 +71,7 @@ already includes what they do.
 | In-Game Bars Follow Menus | Top bar and footer use the menu color and opacity while a game is running |
 | Text Shadow | Soft shadow behind text, for bright games |
 | Gameview Darkness | How dark the game page is below the play bar (Original keeps Steam's look) |
-| Home Background Zoom | Slow zoom on the home background: Steady (keeps the zoom, fixes the flicker some GPUs show when it ends), Steam or Off |
+| Home Background Zoom | Slow zoom on the home background: Steam (default) or Off (still background) |
 | Online Badge Opacity | Background opacity of the PlayCount "online" badge |
 | Play Bar Style | Transparent, Blur, Gradient, Gradient + Blur or Clear, for the play bar and HLTB bar |
 | Play Bar Opacity | Strength of the play bar / HLTB background |

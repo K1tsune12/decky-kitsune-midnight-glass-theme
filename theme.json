@@ -952,14 +952,9 @@
     },
     "Home Background Zoom": {
       "type": "dropdown",
-      "default": "Steady",
+      "default": "Steam",
       "values": {
         "Steam": {},
-        "Steady": {
-          "gameview/home-zoom-steady.css": [
-            "SP"
-          ]
-        },
         "Off": {
           "gameview/home-zoom-off.css": [
             "SP"
