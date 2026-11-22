@@ -1,7 +1,7 @@
 {
   "name": "Kitsune Midnight Glass",
   "author": "K1tsune12",
-  "version": "v1.2",
+  "version": "v1.3",
   "manifest_version": 9,
   "description": "Black glass UI inspired by Obsidian that keeps Steam's blur and transparency, with Clean Gameview, zoom & blur hero options and a darker game page.",
   "inject": {
@@ -25,6 +25,11 @@
     ],
     "other/chat.css": [
       "SP",
+      "QuickAccess"
+    ],
+    "other/new-design.css": [
+      "SP",
+      "MainMenu",
       "QuickAccess"
     ]
   },
@@ -703,6 +708,56 @@
         }
       }
     },
+    "Notification Color": {
+      "type": "dropdown",
+      "default": "Main Color",
+      "values": {
+        "Main Color": {},
+        "Black": {
+          "--kmg-toast-base": [
+            "#000000",
+            "notificationtoasts.*"
+          ]
+        },
+        "Charcoal": {
+          "--kmg-toast-base": [
+            "#141414",
+            "notificationtoasts.*"
+          ]
+        },
+        "Gray": {
+          "--kmg-toast-base": [
+            "#2b2b2b",
+            "notificationtoasts.*"
+          ]
+        },
+        "Midnight Blue": {
+          "--kmg-toast-base": [
+            "#0b1630",
+            "notificationtoasts.*"
+          ]
+        },
+        "Purple": {
+          "--kmg-toast-base": [
+            "#2a0845",
+            "notificationtoasts.*"
+          ]
+        },
+        "Custom": {}
+      },
+      "components": [
+        {
+          "name": "Custom Notification Color",
+          "type": "color-picker",
+          "on": "Custom",
+          "default": "#000000",
+          "css_variable": "--kmg-toast-base",
+          "tabs": [
+            "notificationtoasts.*"
+          ]
+        }
+      ]
+    },
     "Overlay Glass": {
       "type": "checkbox",
       "default": "Yes",
@@ -890,6 +945,23 @@
           ],
           "--kmg-gv-art": [
             "0",
+            "SP"
+          ]
+        }
+      }
+    },
+    "Home Background Zoom": {
+      "type": "dropdown",
+      "default": "Steady",
+      "values": {
+        "Steam": {},
+        "Steady": {
+          "gameview/home-zoom-steady.css": [
+            "SP"
+          ]
+        },
+        "Off": {
+          "gameview/home-zoom-off.css": [
             "SP"
           ]
         }
@@ -1856,6 +1928,18 @@
             "SP"
           ]
         }
+      }
+    },
+    "Hide ProtonDB Analysis Button": {
+      "type": "checkbox",
+      "default": "Yes",
+      "values": {
+        "Yes": {
+          "protondb/analysis-hidden.css": [
+            "SP"
+          ]
+        },
+        "No": {}
       }
     },
     "Decky Plugin Names": {

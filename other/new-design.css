@@ -1,0 +1,25 @@
+/*
+  Steam's newer pages (achievements and others built with its new design
+  system) set colors through CSS variables on each element, not through
+  classes. Matching those variables keeps working when Steam renames its
+  classes after an update.
+*/
+:root {
+  --kmg-panel: rgba(0, 0, 0, 0.35);
+  --kmg-panel-header: rgba(0, 0, 0, 0.25);
+}
+
+/* Cards and lists painted with the neutral gray scale */
+[style*="--background: var(--color-greyneutral"] {
+  --background: var(--kmg-panel) !important;
+}
+
+/* Text fields (search boxes) */
+[style*="--cursor: text"] {
+  --bg-color: var(--kmg-panel) !important;
+}
+
+/* Compact page header (game icon, name and stats): light gray by default */
+[style*='--grid-areas: "capsule title"'] {
+  background: var(--kmg-panel-header) !important;
+}

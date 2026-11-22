@@ -64,12 +64,14 @@ already includes what they do.
 | Chat Opacity | Opacity of the chat window |
 | Selection Opacity | Darkness of the selected item in the Steam menu, Quick Access and chat |
 | Notification Opacity | Opacity of notification toasts |
+| Notification Color | Background color of notification toasts (Main Color, presets or a custom color) |
 | Overlay Glass | Translucent Steam menu and Quick Access over games: dark selections, readable text, no solid grays |
 | In-Game Menu Style | Theme look for the Steam menu while a game is running |
 | In-Game Dim | Extra dim behind menus while a game is running (Steam keeps the original glass) |
 | In-Game Bars Follow Menus | Top bar and footer use the menu color and opacity while a game is running |
 | Text Shadow | Soft shadow behind text, for bright games |
 | Gameview Darkness | How dark the game page is below the play bar (Original keeps Steam's look) |
+| Home Background Zoom | Slow zoom on the home background: Steady (keeps the zoom, fixes the flicker some GPUs show when it ends), Steam or Off |
 | Online Badge Opacity | Background opacity of the PlayCount "online" badge |
 | Play Bar Style | Transparent, Blur, Gradient, Gradient + Blur or Clear, for the play bar and HLTB bar |
 | Play Bar Opacity | Strength of the play bar / HLTB background |
@@ -85,6 +87,7 @@ already includes what they do.
 | Logo Above HLTB | Moves the logo above the HowLongToBeat bar when it is shown |
 | Logo Lift / Logo Size | Moves the logo up and resizes it |
 | ProtonDB Badge Border | Default, Match Tier, White or None |
+| Hide ProtonDB Analysis Button | Hides the analysis button next to the game page badge (ProtonDB Badges 1.4.0 needs that button enabled for the library cover icons) |
 | Disable Glow | Removes the glow behind focused games |
 
 ## Updating after a Steam update

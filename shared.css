@@ -260,3 +260,39 @@ OTHER
 .basicappdetailssectionstyler_AppDetailsContainer_2-ns_ .gamepadtabbedpage_TabContents_WDa0_ {
   background: transparent;
 }
+
+/*
+  Quick Access footer: with two long button hints (e.g. "More info" and
+  "Adjust slider" in Portuguese) Steam wraps them into a second row that covers
+  the bottom of the panel. Keep them on one row, slightly smaller.
+*/
+.quickaccessmenu_QuickAccessMenu_V0cr- .footer_BasicFooter_3T1iF {
+  padding: 0 6px !important;
+}
+.quickaccessmenu_QuickAccessMenu_V0cr- .footer_BasicFooter_3T1iF .footer_FooterLegend_2JJDH {
+  flex-wrap: nowrap !important;
+  justify-content: flex-end !important;
+  column-gap: 8px !important;
+}
+.quickaccessmenu_QuickAccessMenu_V0cr- .footer_BasicFooter_3T1iF .actionbuttonlegenditem_ActionButtonLegend_Mbyhb {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.quickaccessmenu_QuickAccessMenu_V0cr- .footer_BasicFooter_3T1iF .actionbuttonlegenditem_ActionButtonLegend_Mbyhb > :not(.actionbuttonlegenditem_ActionButtonLabel_31Jnn) {
+  zoom: 0.8;
+}
+.quickaccessmenu_QuickAccessMenu_V0cr- .footer_BasicFooter_3T1iF .actionbuttonlegenditem_ActionButtonLabel_31Jnn {
+  white-space: nowrap !important;
+  font-size: 11px !important;
+}
+
+/*
+  Settings: rows are a solid blue-gray card on Steam's dark blue page.
+  Black page, neutral translucent rows (same as the game page cards).
+*/
+.gamepadpagedsettings_PagedSettingsDialog_2P_CG {
+  background: var(--kmg-main) !important;
+}
+.gamepaddialog_Field_S-_La._EifR99lo_Background {
+  background: rgba(255, 255, 255, 0.07) !important;
+}

@@ -1,0 +1,8 @@
+/*
+  ProtonDB Badges: hide the analysis button next to the game page badge.
+  Since plugin 1.4.0 the library cover icons only show while that button is
+  enabled, so this keeps the icons and hides only the button.
+*/
+.protondb-decky-info-button {
+  display: none !important;
+}
